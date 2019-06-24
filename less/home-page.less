@@ -1,32 +1,7 @@
 
 
 
-header
-{
-    background-color: #DAAB1D;
-    height: 12.8rem;
-    .fbMixin;
-    h1
-    {
-        color: #1E3A46;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: bold;
-        margin-left: 8rem;
-    }
-    nav
-    {
-        a
-        {
-            color: #1E3A46;
-            font-family: 'Open Sans', sans-serif;
-            text-decoration: none;
-            font-size: 2rem;
-            font-weight: bold;
-            padding: 0 3.0rem;
-            
-        }
-    }
-}
+
 
 .top-content
 {
@@ -70,18 +45,7 @@ header
         top: -13.4rem;
         border-top: 0.1rem solid black;
 
-        #join-today-button
-        {
-            margin: 1rem 51.2rem;
-            height: 4.8rem;
-            width: 24.0rem;
-            border-radius: 1rem;
-            border: none;
-            background-color: #488EAC;
-            color: @lighterTan;
-            font-size: 2.4rem;
-            font-family: 'Open Sans', sans-serif;
-        }
+        
         .three-features
         {
             .fbMixin(row nowrap, space-around, center);
@@ -169,5 +133,91 @@ header
             margin-top: 4.7rem;
             margin-left: 19rem;
         }
+    }
+}
+
+.meet-users-section
+{
+    h2
+    {
+        padding-left: 7.2rem;
+        padding-top: 1.8rem;
+        color: @blueTextColor;
+        font-size: 2.8rem;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .meet-users-div
+    {
+        margin-top: 2.35rem;
+        .fbMixin(row nowrap, space-around, flex-start);
+        img
+        {
+            margin-bottom: 1.75rem;
+        }
+        p
+        {
+            color: @blueTextColor;
+            font-size: 1.8rem;
+            font-family: 'Open Sans', sans-serif;
+            width: 24rem;
+            line-height: 2.5rem;
+        }
+        .signature
+        {
+            margin-top: 0.7rem;
+            text-align: right;
+            font-style: italic;
+        }
+
+    }
+}
+
+.how-it-works-section
+{
+    background-color: @lighterTan;
+    height: 40.5rem;
+    h2
+    {
+        padding-left: 7.2rem;
+        padding-top: 1.8rem;
+        color: @blueTextColor;
+        font-size: 2.8rem;
+        font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .how-it-works-div
+    {
+        .fbMixin(row nowrap, space-around, flex-start);
+
+        p
+        {
+            color: @brownTextColor;
+            font-size: 1.8rem;
+            font-family: 'Open Sans', sans-serif;
+            width: 40rem;
+            line-height: 2.5rem;
+            &:last-child
+            {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.join-today-button
+{
+    margin: 1rem 51.2rem;
+    height: 4.8rem;
+    width: 24.0rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #488EAC;
+    color: @lighterTan;
+    font-size: 2.4rem;
+    font-family: 'Open Sans', sans-serif;
+    &#bottom-join-today
+    {
+        margin: 0;
     }
 }

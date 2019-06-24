@@ -159,6 +159,43 @@ header nav a {
   font-weight: bold;
   padding: 0 3rem;
 }
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #488EAC;
+  height: 19.5rem;
+}
+footer h3 {
+  font-size: 2rem;
+  color: #EDE3C2;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  margin: 2.6rem auto 0.7rem -1.3rem;
+}
+footer div a {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #EDE3C2;
+  font-family: 'Open Sans', sans-serif;
+}
+footer p {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #EDE3C2;
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 4.8rem;
+}
+footer address {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #EDE3C2;
+  font-family: 'Open Sans', sans-serif;
+}
 .top-content img {
   z-index: -1;
 }
@@ -192,17 +229,6 @@ header nav a {
   left: 8.8rem;
   top: -13.4rem;
   border-top: 0.1rem solid black;
-}
-.top-content .product-features #join-today-button {
-  margin: 1rem 51.2rem;
-  height: 4.8rem;
-  width: 24rem;
-  border-radius: 1rem;
-  border: none;
-  background-color: #488EAC;
-  color: #EDE3C2;
-  font-size: 2.4rem;
-  font-family: 'Open Sans', sans-serif;
 }
 .top-content .product-features .three-features {
   display: flex;
@@ -281,4 +307,76 @@ header nav a {
   border-radius: 0.6rem;
   margin-top: 4.7rem;
   margin-left: 19rem;
+}
+.meet-users-section h2 {
+  padding-left: 7.2rem;
+  padding-top: 1.8rem;
+  color: #1E3A46;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.meet-users-section .meet-users-div {
+  margin-top: 2.35rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.meet-users-section .meet-users-div img {
+  margin-bottom: 1.75rem;
+}
+.meet-users-section .meet-users-div p {
+  color: #1E3A46;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 24rem;
+  line-height: 2.5rem;
+}
+.meet-users-section .meet-users-div .signature {
+  margin-top: 0.7rem;
+  text-align: right;
+  font-style: italic;
+}
+.how-it-works-section {
+  background-color: #EDE3C2;
+  height: 40.5rem;
+}
+.how-it-works-section h2 {
+  padding-left: 7.2rem;
+  padding-top: 1.8rem;
+  color: #1E3A46;
+  font-size: 2.8rem;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+.how-it-works-section .how-it-works-div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.how-it-works-section .how-it-works-div p {
+  color: #41340C;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 40rem;
+  line-height: 2.5rem;
+}
+.how-it-works-section .how-it-works-div p:last-child {
+  margin-bottom: 2rem;
+}
+.join-today-button {
+  margin: 1rem 51.2rem;
+  height: 4.8rem;
+  width: 24rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #488EAC;
+  color: #EDE3C2;
+  font-size: 2.4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.join-today-button#bottom-join-today {
+  margin: 0;
 }
