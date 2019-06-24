@@ -157,5 +157,50 @@ header nav a {
   text-decoration: none;
   font-size: 2rem;
   font-weight: bold;
-  padding: 0 3.2rem;
+  padding: 0 3rem;
+}
+.top-content img {
+  z-index: -1;
+}
+.top-content .arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 63.2rem solid transparent;
+  border-right: 63.2rem solid transparent;
+  border-bottom: 28rem solid #C0B594;
+  position: absolute;
+  margin: -41.4rem 8.8rem;
+  z-index: 1;
+}
+.top-content .arrow-up h2 {
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  left: -29rem;
+  top: 15rem;
+  width: 58rem;
+  font-size: 3rem;
+  white-space: pre-line;
+}
+.top-content .product-features {
+  width: 126.4rem;
+  height: 54.7rem;
+  background-color: #EDE3C2;
+  position: relative;
+  left: 8.8rem;
+  top: -13.4rem;
+  border-top: 0.1rem solid black;
+}
+.top-content .product-features #join-today-button {
+  margin: 1rem 51.2rem;
+  height: 4.8rem;
+  width: 24rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: #488EAC;
+  color: #EDE3C2;
+  font-size: 2.4rem;
+  font-family: 'Open Sans', sans-serif;
 }
