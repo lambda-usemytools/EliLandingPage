@@ -41,13 +41,13 @@ header
         height: 0;
         border-left: 63.2rem solid transparent;
         border-right: 63.2rem solid transparent;
-        border-bottom: 28rem solid #C0B594;
+        border-bottom: 28rem solid @darkerTan;
         position: absolute;
         margin: -41.4rem 8.8rem;
         z-index: 1;
         h2
         {
-            color: #1E3A46;
+            color: @blueTextColor;
             font-family: 'Open Sans', sans-serif;
             font-weight: bold;
             text-align: center;
@@ -81,6 +81,93 @@ header
             color: @lighterTan;
             font-size: 2.4rem;
             font-family: 'Open Sans', sans-serif;
+        }
+        .three-features
+        {
+            .fbMixin(row nowrap, space-around, center);
+
+            .feature-name
+            {
+                height: 8.8rem;
+                width: 36.8rem;
+                background-color: @goldYellow;
+                p
+                {
+                    text-align: center;
+                    color: @brownTextColor;
+                    font-size: 3.2rem;
+                    padding-top: 2.1rem;
+                }
+                border: 0.3rem solid #6E5710;
+                border-radius: 0.3rem;
+            }
+
+            .feature-details
+            {
+                background-color: @darkerTan;
+                width: 36.8rem;
+                height: 36.2rem;
+                padding-left: 0.5rem;
+                p
+                {
+                    color: @brownTextColor;
+                    font-size: 2.8rem;
+                    font-family: 'Open Sans', sans-serif;
+                    padding: 0.3rem 1.7rem 1.7rem 1.7rem;
+                    line-height: 3.8rem;
+                }
+            }
+        }
+    }
+}
+
+.why-use-section
+{
+    background-color: @darkerTan;
+    height: 40.5rem;
+    h3
+    {
+        color: @blueTextColor;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin-left: 7.2rem;
+        padding-top: .8rem;
+        margin-bottom: 2.2rem;
+    }
+    .why-use-div
+    {
+        .fbMixin(row nowrap, space-around);
+        h4
+        {
+            color: @brownTextColor;
+            font-size: 2.4rem;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+            // width: 36.8rem;
+            line-height: 3.3rem;
+            margin-bottom: 2.4rem;
+        }
+        p
+        {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 3.8rem;
+            text-align: center;
+            font-size: 2.8rem;
+            width: 51rem;
+        }
+        .sign-up-now-button
+        {
+            background-color: @goldYellow;
+            width: 24rem;
+            height: 6.6rem;
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: #336277;
+            border: none;
+            border-radius: 0.6rem;
+            margin-top: 4.7rem;
+            margin-left: 19rem;
         }
     }
 }
