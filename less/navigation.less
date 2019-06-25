@@ -9,6 +9,11 @@ header
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         margin-left: 8rem;
+        @media (max-width: 1000px)
+        {
+            margin-left: 3rem;
+            // font-size: 3rem;
+        }
     }
     nav
     {
@@ -20,6 +25,11 @@ header
             font-size: 2rem;
             font-weight: bold;
             padding: 0 3.0rem;
+            @media (max-width: 1000px)
+            {
+                font-size: 1.8rem;
+                padding: 0 2.5rem;
+            }
             &:hover
             {
                 text-decoration: underline;

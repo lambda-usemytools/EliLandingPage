@@ -5,6 +5,10 @@
     .arrow-features-div
     {
         margin: 0 auto;
+        @media (max-width: 1000px)
+        {
+            margin-bottom: -12rem;
+        }
         .arrow-up
         {
             width: 0;
@@ -43,6 +47,18 @@
                     top: 10rem;
                 }
             }
+            @media (max-width: 1000px)
+            {
+                border-left: 38.4rem solid transparent;
+                border-right: 38.4rem solid transparent;
+                border-bottom: 17.01rem solid @darkerTan;
+                margin: -18rem auto;
+                h2
+                {
+                    font-size: 2rem;
+                    top: 10rem;
+                }
+            }
         }
         .product-features
         {
@@ -56,6 +72,20 @@
             border-top: 0.1rem solid black;
             opacity: 0;
             margin-bottom: 43rem;
+            @media (max-width: 1439px)
+            {
+                width: 100rem;
+                top: 30rem;
+                margin-bottom: 31.5rem;
+                height: 45rem;
+            }
+            @media (max-width: 1000px)
+            {
+                width: @pgContWidth768;
+                top: 18rem;
+                margin-bottom: 31.5rem;
+                height: 45rem;
+            }
             a
             {
                 text-decoration: none;
@@ -78,6 +108,11 @@
                         @media (max-width: 1439px)
                         {
                             font-size: 2rem;
+                            padding-top:3rem;
+                        }
+                        @media (max-width: 1000px)
+                        {
+                            padding-top:3rem;
                         }
                     }
                     border: 0.3rem solid #6E5710;
@@ -85,6 +120,10 @@
                     @media (max-width: 1439px)
                     {
                         width: 26rem;
+                    }
+                    @media (max-width: 1000px)
+                    {
+                        width: 20rem;
                     }
                 }
 
@@ -104,21 +143,24 @@
                         @media (max-width: 1439px)
                         {
                             font-size: 1.6rem;
+                            line-height: 2.8rem;
+                        }
+                        @media (max-width: 1439px)
+                        {
+                            font-size: 1.6rem;
+                            line-height: 2rem;
                         }
                     }
                     @media (max-width: 1439px)
                     {
                         width: 26rem;
-                        height: 26.8rem;
+                        height: 22.8rem;
+                    }
+                    @media (max-width: 1000px)
+                    {
+                        width: 20rem;
                     }
                 }
-            }
-            @media (max-width: 1439px)
-            {
-                width: 100rem;
-                top: 30rem;
-                margin-bottom: 31.5rem;
-                height: 45rem;
             }
         }
     }
@@ -153,6 +195,13 @@
         @media (max-width: 1439px)
         {
             font-size: 2.2rem;
+            padding-left: 1.2rem;
+        }
+        @media (max-width: 1000px)
+        {
+            font-size: 2.2rem;
+            padding-left: 1.2rem;
+        
         }
     }
     .why-use-div
@@ -171,6 +220,11 @@
             {
                 font-size: 1.8rem;
             }
+            @media (max-width: 1000px)
+            {
+                line-height: 2.6rem;
+                padding-left: 2rem;
+            }
         }
         p
         {
@@ -180,9 +234,15 @@
             font-size: 2.8rem;
             width: 51rem;
             @media (max-width: 1439px)
-        {
-            font-size: 1.8rem;
-        }
+            {
+                font-size: 1.8rem;
+            }
+            @media (max-width: 1000px)
+            {
+                width: 35rem;
+                padding-left: 3rem;
+                padding-right: 1rem;
+            }
         }
         a
         {
@@ -206,6 +266,15 @@
             {
                 margin-left: -13.5rem;
                 margin-top: 1.2rem;
+                @media (max-width: 1000px)
+                {
+                    margin-left: -11.5rem;
+                }
+            }
+            @media (max-width: 1000px)
+            {
+                width: 18rem;
+                transform: translate(-8rem, 0);
             }
         }
     }
@@ -222,6 +291,10 @@
         font-size: 2.8rem;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
+        @media (max-width: 1439px)
+        {
+            padding-left: 2rem;
+        }
     }
     .meet-users-div
     {
@@ -259,13 +332,17 @@
     }
     h2
     {
-        padding-left: 3rem;
+        padding-left: 1rem;
         padding-top: 1.8rem;
         margin-bottom: 2rem;
         color: @blueTextColor;
         font-size: 2.8rem;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
+        @media (max-width: 1439px)
+        {
+            // padding-left:
+        }
     }
     .how-it-works-div
     {
@@ -278,16 +355,14 @@
             font-family: 'Open Sans', sans-serif;
             width: 40rem;
             line-height: 2.5rem;
+            padding-left: 2rem;
             @media (max-width: 1439px)
             {
                 width: 30rem;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
+                line-height: 2.2rem;
             }
         }
-        // .a
-        // {
-        //     margin-bottom: 13.5rem;
-        // }
     }
 }
 

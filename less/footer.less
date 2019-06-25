@@ -4,10 +4,7 @@ footer
     .fbMixin(row nowrap, space-around, flex-start);
     background-color: #488EAC;
     height: 19.5rem;
-    div
-    {
 
-    }
     h3
     {
         font-size: 2rem;
@@ -16,6 +13,11 @@ footer
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         margin: 2.6rem auto .7rem -1.3rem;
+        @media (max-width: 1000px)
+        {
+            margin: 1.8rem auto .7rem 0;
+            padding-right: 1rem;
+        }
     }
     div a
     {
