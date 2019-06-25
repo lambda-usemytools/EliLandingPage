@@ -447,7 +447,8 @@ footer address {
   margin-bottom: 13.5rem;
 }
 .join-today-button {
-  margin: 1rem 51.2rem;
+  display: block;
+  margin: 1rem auto;
   height: 4.8rem;
   width: 24rem;
   border-radius: 1rem;
