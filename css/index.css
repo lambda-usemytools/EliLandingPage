@@ -178,11 +178,13 @@ footer div a {
   display: block;
   text-decoration: none;
   font-size: 2rem;
+  padding: 0.8rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
 }
 footer p {
   display: block;
+  padding: 0.8rem;
   font-size: 2rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
@@ -192,6 +194,7 @@ footer address {
   display: block;
   text-decoration: none;
   font-size: 2rem;
+  padding: 0.8rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
 }
@@ -267,6 +270,7 @@ footer address {
 .why-use-section {
   background-color: #C0B594;
   height: 40.5rem;
+  margin-top: -12rem;
 }
 .why-use-section h3 {
   color: #1E3A46;
@@ -310,6 +314,9 @@ footer address {
   margin-top: 4.7rem;
   margin-left: 19rem;
 }
+.meet-users-section {
+  padding-bottom: 4.2rem;
+}
 .meet-users-section h2 {
   padding-left: 7.2rem;
   padding-top: 1.8rem;
@@ -332,11 +339,11 @@ footer address {
   color: #1E3A46;
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
-  width: 24rem;
+  width: 25rem;
   line-height: 2.5rem;
 }
 .meet-users-section .meet-users-div .signature {
-  margin-top: 0.7rem;
+  margin-top: 0.3rem;
   text-align: right;
   font-style: italic;
 }
@@ -365,8 +372,8 @@ footer address {
   width: 40rem;
   line-height: 2.5rem;
 }
-.how-it-works-section .how-it-works-div p:last-child {
-  margin-bottom: 2rem;
+.how-it-works-section .how-it-works-div .a {
+  margin-bottom: 13.5rem;
 }
 .join-today-button {
   margin: 1rem 51.2rem;
@@ -380,5 +387,12 @@ footer address {
   font-family: 'Open Sans', sans-serif;
 }
 .join-today-button#bottom-join-today {
+  display: block;
   margin: 0;
+  transform: translate(50rem, 28.5rem);
+  position: absolute;
+}
+.footer-top-spacer {
+  background: white;
+  height: 5.7rem;
 }
