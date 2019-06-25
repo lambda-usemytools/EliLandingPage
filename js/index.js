@@ -48,3 +48,25 @@ joinBtns.forEach(btn => btn.addEventListener("mouseleave", _ =>
     btn.style.border = "3px solid transparent";
     btn.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
 }))
+
+// Meet Users Section based on Width
+
+let mUserFlex = document.querySelector(".meet-users-div");
+let mUserAccordion = document.querySelector(".meet-users-accordion");
+
+function sizeCheckAccordion()
+{
+    if(window.innerWidth <= 1000)
+    {
+        mUserFlex.classList.add("meet-users-hidden");
+        mUserAccordion.classList.remove("meet-users-hidden");
+    }
+}
+
+window.addEventListener("load", _ =>
+{
+    sizeCheckAccordion();
+});
+
+
+window.onresize = sizeCheckAccordion;

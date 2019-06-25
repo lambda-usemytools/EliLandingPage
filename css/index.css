@@ -540,6 +540,12 @@ footer address a {
   text-align: right;
   font-style: italic;
 }
+.meet-users-section .meet-users-div.meet-users-hidden {
+  display: none;
+}
+.meet-users-hidden {
+  display: none;
+}
 .how-it-works-section {
   background-color: #EDE3C2;
   height: 40.5rem;
