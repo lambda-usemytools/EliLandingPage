@@ -137,6 +137,11 @@ h1 {
   max-width: 144rem;
   margin: 0 auto;
 }
+@media (max-width: 1439px) {
+  .page-container {
+    max-width: 100rem;
+  }
+}
 header {
   background-color: #DAAB1D;
   height: 12.8rem;
@@ -198,21 +203,21 @@ footer address {
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
 }
-.top-content img {
-  z-index: -1;
+.top-content .arrow-features-div {
+  margin: 0 auto;
 }
-.top-content .arrow-up {
+.top-content .arrow-features-div .arrow-up {
   width: 0;
   height: 0;
   border-left: 63.2rem solid transparent;
   border-right: 63.2rem solid transparent;
   border-bottom: 28rem solid #C0B594;
-  position: absolute;
-  margin: -41.4rem 8.8rem;
+  position: relative;
+  margin: -41.4rem auto;
   z-index: 1;
   opacity: 0;
 }
-.top-content .arrow-up h2 {
+.top-content .arrow-features-div .arrow-up h2 {
   color: #1E3A46;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -225,61 +230,111 @@ footer address {
   white-space: pre-line;
   line-height: 3.8rem;
 }
-.top-content .product-features {
+@media (max-width: 1439px) {
+  .top-content .arrow-features-div .arrow-up {
+    border-left: 50rem solid transparent;
+    border-right: 50rem solid transparent;
+    border-bottom: 22.15rem solid #C0B594;
+    margin: -30rem auto;
+  }
+  .top-content .arrow-features-div .arrow-up h2 {
+    font-size: 2rem;
+    top: 9rem;
+  }
+}
+.top-content .arrow-features-div .product-features {
   width: 126.4rem;
   height: 54.7rem;
   background-color: #EDE3C2;
   position: relative;
-  left: 8.8rem;
-  top: -13.4rem;
+  top: 41.4rem;
+  margin: 0 auto;
   border-top: 0.1rem solid black;
   opacity: 0;
+  margin-bottom: 43rem;
 }
-.top-content .product-features .three-features {
+.top-content .arrow-features-div .product-features .three-features {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
 }
-.top-content .product-features .three-features .feature-name {
+.top-content .arrow-features-div .product-features .three-features .feature-name {
   height: 8.8rem;
   width: 36.8rem;
   background-color: #DAAB1D;
   border: 0.3rem solid #6E5710;
   border-radius: 0.3rem;
 }
-.top-content .product-features .three-features .feature-name p {
+.top-content .arrow-features-div .product-features .three-features .feature-name p {
   text-align: center;
   color: #41340C;
   font-size: 3.2rem;
   padding-top: 2.1rem;
 }
-.top-content .product-features .three-features .feature-details {
+@media (max-width: 1439px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-name p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1439px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-name {
+    width: 26rem;
+  }
+}
+.top-content .arrow-features-div .product-features .three-features .feature-details {
   background-color: #C0B594;
   width: 36.8rem;
   height: 36.2rem;
   padding-left: 0.5rem;
 }
-.top-content .product-features .three-features .feature-details p {
+.top-content .arrow-features-div .product-features .three-features .feature-details p {
   color: #41340C;
   font-size: 2.8rem;
   font-family: 'Open Sans', sans-serif;
   padding: 0.3rem 1.7rem 1.7rem 1.7rem;
   line-height: 3.8rem;
 }
+@media (max-width: 1439px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-details p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 1439px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-details {
+    width: 26rem;
+  }
+}
+@media (max-width: 1439px) {
+  .top-content .arrow-features-div .product-features {
+    width: 100rem;
+    top: 30rem;
+    margin-bottom: 31.5rem;
+  }
+}
+.top-content img {
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 1439px) {
+}
 .why-use-section {
   background-color: #C0B594;
   height: 40.5rem;
-  margin-top: -12rem;
 }
 .why-use-section h3 {
   color: #1E3A46;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.8rem;
   font-weight: bold;
-  margin-left: 7.2rem;
+  padding-left: 7.2rem;
   padding-top: 0.8rem;
   margin-bottom: 2.2rem;
+}
+@media (max-width: 1439px) {
+  .why-use-section h3 {
+    font-size: 2.2rem;
+  }
 }
 .why-use-section .why-use-div {
   display: flex;
@@ -295,12 +350,22 @@ footer address {
   line-height: 3.3rem;
   margin-bottom: 2.4rem;
 }
+@media (max-width: 1439px) {
+  .why-use-section .why-use-div h4 {
+    font-size: 1.8rem;
+  }
+}
 .why-use-section .why-use-div p {
   font-family: 'Open Sans', sans-serif;
   line-height: 3.8rem;
   text-align: center;
   font-size: 2.8rem;
   width: 51rem;
+}
+@media (max-width: 1439px) {
+  .why-use-section .why-use-div p {
+    font-size: 1.8rem;
+  }
 }
 .why-use-section .why-use-div .sign-up-now-button {
   background-color: #DAAB1D;
@@ -372,6 +437,12 @@ footer address {
   width: 40rem;
   line-height: 2.5rem;
 }
+@media (max-width: 1439px) {
+  .how-it-works-section .how-it-works-div p {
+    width: 30rem;
+    font-size: 1.4rem;
+  }
+}
 .how-it-works-section .how-it-works-div .a {
   margin-bottom: 13.5rem;
 }
@@ -386,11 +457,21 @@ footer address {
   font-size: 2.4rem;
   font-family: 'Open Sans', sans-serif;
 }
+@media (max-width: 1439px) {
+  .join-today-button {
+    margin: 1rem auto;
+  }
+}
 .join-today-button#bottom-join-today {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   transform: translate(50rem, 28.5rem);
   position: absolute;
+}
+@media (max-width: 1439px) {
+  .join-today-button#bottom-join-today {
+    transform: translate(33rem, 28.5rem);
+  }
 }
 .footer-top-spacer {
   background: white;

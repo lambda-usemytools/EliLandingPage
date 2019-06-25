@@ -1,85 +1,132 @@
 
 .top-content
 {
+
+    .arrow-features-div
+    {
+        margin: 0 auto;
+        .arrow-up
+        {
+            width: 0;
+            height: 0;
+            border-left: 63.2rem solid transparent;
+            border-right: 63.2rem solid transparent;
+            border-bottom: 28rem solid @darkerTan;
+            position: relative;
+            margin: -41.4rem auto;
+            z-index: 1;
+            opacity: 0;
+            h2
+            {
+                color: @blueTextColor;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                text-align: center;
+
+                position: relative;
+                left: -29rem;
+                top: 15rem;
+                width: 58rem;
+                font-size: 3rem;
+                white-space: pre-line;
+                line-height: 3.8rem;
+            }
+            @media (max-width: 1439px)
+            {
+                border-left: 50rem solid transparent;
+                border-right: 50rem solid transparent;
+                border-bottom: 22.15rem solid @darkerTan;
+                margin: -30rem auto;
+                h2
+                {
+                    font-size: 2rem;
+                    top: 9rem;
+                }
+            }
+        }
+        .product-features
+        {
+            width: 126.4rem;
+            height: 54.7rem;
+            background-color: @lighterTan;
+            position: relative;
+            // left: 8.8rem;
+            top: 41.4rem;
+            margin: 0 auto;
+            border-top: 0.1rem solid black;
+            opacity: 0;
+            margin-bottom: 43rem;
+            .three-features
+            {
+                .fbMixin(row nowrap, space-around, center);
+
+                .feature-name
+                {
+                    height: 8.8rem;
+                    width: 36.8rem;
+                    background-color: @goldYellow;
+                    p
+                    {
+                        text-align: center;
+                        color: @brownTextColor;
+                        font-size: 3.2rem;
+                        padding-top: 2.1rem;
+                        @media (max-width: 1439px)
+                        {
+                            font-size: 2rem;
+                        }
+                    }
+                    border: 0.3rem solid #6E5710;
+                    border-radius: 0.3rem;
+                    @media (max-width: 1439px)
+                    {
+                        width: 26rem;
+                    }
+                }
+
+                .feature-details
+                {
+                    background-color: @darkerTan;
+                    width: 36.8rem;
+                    height: 36.2rem;
+                    padding-left: 0.5rem;
+                    p
+                    {
+                        color: @brownTextColor;
+                        font-size: 2.8rem;
+                        font-family: 'Open Sans', sans-serif;
+                        padding: 0.3rem 1.7rem 1.7rem 1.7rem;
+                        line-height: 3.8rem;
+                        @media (max-width: 1439px)
+                        {
+                            font-size: 1.8rem;
+                        }
+                    }
+                    @media (max-width: 1439px)
+                    {
+                        width: 26rem;
+                    }
+                }
+            }
+            @media (max-width: 1439px)
+            {
+                width: 100rem;
+                top: 30rem;
+                margin-bottom: 31.5rem;
+            }
+        }
+    }
+
     img
     {
         z-index: -1;
-    }
-    .arrow-up
-    {
-        width: 0;
-        height: 0;
-        border-left: 63.2rem solid transparent;
-        border-right: 63.2rem solid transparent;
-        border-bottom: 28rem solid @darkerTan;
-        position: absolute;
-        margin: -41.4rem 8.8rem;
-        z-index: 1;
-        opacity: 0;
-        h2
+        width:100%;
+        @media (max-width: 1439px)
         {
-            color: @blueTextColor;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            text-align: center;
-
-            position: relative;
-            left: -29rem;
-            top: 15rem;
-            width: 58rem;
-            font-size: 3rem;
-            white-space: pre-line;
-            line-height: 3.8rem;
+            // width:80rem;
         }
     }
-    .product-features
-    {
-        width: 126.4rem;
-        height: 54.7rem;
-        background-color: @lighterTan;
-        position: relative;
-        left: 8.8rem;
-        top: -13.4rem;
-        border-top: 0.1rem solid black;
-        opacity: 0;
-        
-        .three-features
-        {
-            .fbMixin(row nowrap, space-around, center);
-
-            .feature-name
-            {
-                height: 8.8rem;
-                width: 36.8rem;
-                background-color: @goldYellow;
-                p
-                {
-                    text-align: center;
-                    color: @brownTextColor;
-                    font-size: 3.2rem;
-                    padding-top: 2.1rem;
-                }
-                border: 0.3rem solid #6E5710;
-                border-radius: 0.3rem;
-            }
-
-            .feature-details
-            {
-                background-color: @darkerTan;
-                width: 36.8rem;
-                height: 36.2rem;
-                padding-left: 0.5rem;
-                p
-                {
-                    color: @brownTextColor;
-                    font-size: 2.8rem;
-                    font-family: 'Open Sans', sans-serif;
-                    padding: 0.3rem 1.7rem 1.7rem 1.7rem;
-                    line-height: 3.8rem;
-                }
-            }
-        }
-    }
+    
 }
 
 .why-use-section
@@ -87,16 +134,20 @@
 
     background-color: @darkerTan;
     height: 40.5rem;
-    margin-top: -12rem;
+    
     h3
     {
         color: @blueTextColor;
         font-family: 'Open Sans', sans-serif;
         font-size: 2.8rem;
         font-weight: bold;
-        margin-left: 7.2rem;
+        padding-left: 7.2rem;
         padding-top: .8rem;
         margin-bottom: 2.2rem;
+        @media (max-width: 1439px)
+        {
+            font-size: 2.2rem;
+        }
     }
     .why-use-div
     {
@@ -110,6 +161,10 @@
             // width: 36.8rem;
             line-height: 3.3rem;
             margin-bottom: 2.4rem;
+            @media (max-width: 1439px)
+            {
+                font-size: 1.8rem;
+            }
         }
         p
         {
@@ -118,6 +173,10 @@
             text-align: center;
             font-size: 2.8rem;
             width: 51rem;
+            @media (max-width: 1439px)
+        {
+            font-size: 1.8rem;
+        }
         }
         .sign-up-now-button
         {
@@ -197,6 +256,11 @@
             font-family: 'Open Sans', sans-serif;
             width: 40rem;
             line-height: 2.5rem;
+            @media (max-width: 1439px)
+            {
+                width: 30rem;
+                font-size: 1.4rem;
+            }
         }
         .a
         {
@@ -216,13 +280,21 @@
     color: @lighterTan;
     font-size: 2.4rem;
     font-family: 'Open Sans', sans-serif;
+    @media (max-width: 1439px)
+        {
+            margin: 1rem auto;
+            // margin-left: 38rem;
+        }
     &#bottom-join-today
     {
         display: block;
-        margin:0;
+        margin:0 auto;
         transform: translate(50rem, 28.5rem);
         position: absolute;
-
+        @media (max-width: 1439px)
+        {
+            transform: translate(33rem, 28.5rem);
+        }
     }
 }
 
