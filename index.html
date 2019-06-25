@@ -130,34 +130,41 @@
                     <img src="assets/images/darrenAdams.png" alt="a user of the service">
                     <p>I was tired of always loaning tools and not remembering who I lent them to.  
                         With Use My Tools I know where all of my tools are all the time, 
-                        and I’m even making money by renting out the tools I have.</p>
-                    <p class="signature">—Darren Adams</p>
+                        and I’m even making money by renting out the tools I have.<br><br><i>—Darren Adams</i></p>
+                    
                 </div>
                 <div class="met-user-accordion">
                     <img src="assets/images/deniceEkdahl.png" alt="a user of the service">
                     <p>It is so convenient being able to find the tools I need to work on my projects 
-                        around the house and in my community.  I’m so happy I found Use My Tools. </p>
-                    <p class="signature">—Denice Ekdahl</p>
+                        around the house and in my community.  I’m so happy I found Use My Tools.<br><br><i>—Denice Ekdahl</i></p>
                 </div>
                 <div class="met-user-accordion">
                     <img src="assets/images/benediktSafiyulin.png" alt="a user of the service">
                     <p>With Use My Tools I am making money with tools I already own, my garage is 
                         much more organized, and I enjoy getting to network with others in my community 
-                        that I can exchange tools with.  </p>
-                    <p class="signature">—Benedikt Safiyulin</p>   
+                        that I can exchange tools with.<br><br><i>—Benedikt Safiyulin</i></p>
                 </div>
             </div>
 
         </section>
 
         <section class="how-it-works-section">
+            
+            <div class="how-it-works-top">
+                
+                <h2>How It Works</h2>
+                
+                <div class="tabs-link hide-tabs tabs-link-selected" data-tab="account">Create Account</div>
+                <div class="tabs-link hide-tabs" data-tab="rental">Renting Tools</div>
+                <div class="tabs-link hide-tabs" data-tab="return">Tool Returns</div>
+                
 
-            <h2>How It Works</h2>
+            </div>
 
             <div class="how-it-works-div">
 
                 <div>
-                    <p>When you create an account with Use My Tools you can easily add all of the tools that you have 
+                    <p class="how-it-works-p tabs-item tabs-item-selected" data-tab="account">When you create an account with Use My Tools you can easily add all of the tools that you have 
                         in your garage.  When you add those tools you can choose if you want the tool to be available 
                         to your garage only, your network , or out for rental.  When an item is available to your garage 
                         only, it will not show up as available in any searches when someone is looking to borrow or rent 
@@ -166,7 +173,7 @@
                         but hopefully they will return the favor.  </p>
                 </div>
                 <div>
-                    <p>A tool that is added for rental will show up when local Use My Tools users search for that tool.  
+                    <p class="how-it-works-p tabs-item" data-tab="rental">A tool that is added for rental will show up when local Use My Tools users search for that tool.  
                         If that user likes the price you have set and wants to rent that tool from you, 
                         they will be able to request it.  Once they request it, you will see their profile 
                         and their previous reviews.  If you agree to rent the tool to that person, 
@@ -175,12 +182,12 @@
                         and the borrower will get your tool for the amount of time agreed upon.  </p>
                 </div>
                 <div>
-                    <p class="a">Once the rental period is over the borrower will return the tool 
+                    <p class="how-it-works-p tabs-item" data-tab="return">Once the rental period is over the borrower will return the tool 
                         and you will receive your payment.  If any damage should happen to your tool 
                         or anything should go wrong, a Use My Tools representative is always there to help resolve 
                         the issue.  </p>
+                    <a href="https://gracious-ptolemy-4a8ec7.netlify.com/create-account"><div class="join-today-button" id="bottom-join-today">Join Today</div></a>
                 </div>
-                <a href="https://gracious-ptolemy-4a8ec7.netlify.com/create-account"><div class="join-today-button" id="bottom-join-today"><p>Join Today</p></div></a>
 
             </div>
 
@@ -214,5 +221,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/tabComponent.js"></script>
 </body>
 </html>

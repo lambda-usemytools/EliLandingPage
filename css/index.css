@@ -134,17 +134,17 @@ h1 {
 }
 .page-container {
   width: 100%;
-  max-width: 144rem;
+  max-width: 1440px;
   margin: 0 auto;
 }
 @media (max-width: 1439px) {
   .page-container {
-    max-width: 100rem;
+    max-width: 1000px;
   }
 }
 @media (max-width: 1000px) {
   .page-container {
-    max-width: 76.8rem;
+    max-width: 769px;
   }
 }
 header {
@@ -286,7 +286,20 @@ footer address a {
   }
   .top-content .arrow-features-div .arrow-up h2 {
     font-size: 2rem;
-    top: 10rem;
+    top: 8.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .arrow-up {
+    border-left: 50vw solid transparent;
+    border-right: 50vw solid transparent;
+    border-bottom: 22.15vw solid #C0B594;
+    margin: -18rem auto;
+  }
+  .top-content .arrow-features-div .arrow-up h2 {
+    font-size: 1.6rem;
+    top: 12vw;
+    line-height: 2rem;
   }
 }
 .top-content .arrow-features-div .product-features {
@@ -310,7 +323,15 @@ footer address a {
 }
 @media (max-width: 1000px) {
   .top-content .arrow-features-div .product-features {
-    width: 76.8rem;
+    width: 769px;
+    top: 18rem;
+    margin-bottom: 31.5rem;
+    height: 45rem;
+  }
+}
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features {
+    width: 100vw;
     top: 18rem;
     margin-bottom: 31.5rem;
     height: 45rem;
@@ -529,7 +550,7 @@ footer address a {
   margin-bottom: 1.75rem;
 }
 .meet-users-section .meet-users-div p {
-  color: #1E3A46;
+  color: #41340C;
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
   width: 25rem;
@@ -543,12 +564,65 @@ footer address a {
 .meet-users-section .meet-users-div.meet-users-hidden {
   display: none;
 }
+.meet-users-section .meet-users-accordion .met-user-accordion {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion img {
+  width: 12rem;
+  padding-right: 2rem;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion p {
+  color: #41340C;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif;
+  width: 65rem;
+  line-height: 2.5rem;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion p i {
+  font-style: italic;
+}
 .meet-users-hidden {
   display: none;
 }
 .how-it-works-section {
   background-color: #EDE3C2;
   height: 40.5rem;
+}
+.how-it-works-section .how-it-works-top {
+  display: block;
+}
+@media (max-width: 1000px) {
+  .how-it-works-section .how-it-works-top h2 {
+    margin-left: -4rem;
+    padding-right: 9rem;
+  }
+}
+@media (max-width: 1000px) {
+  .how-it-works-section .how-it-works-top {
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .how-it-works-section .how-it-works-top .tabs-link {
+    font-size: 2rem;
+    width: 16rem;
+    height: 4.4rem;
+    text-align: center;
+    border-left: 1px solid black;
+    padding-top: 2rem;
+  }
+  .how-it-works-section .how-it-works-top .tabs-link:last-child {
+    border-right: 1px solid black;
+  }
+}
+.how-it-works-section .hide-tabs {
+  display: none;
 }
 .how-it-works-section a {
   text-decoration: none;
@@ -570,6 +644,11 @@ footer address a {
   justify-content: space-around;
   align-items: flex-start;
 }
+@media (max-width: 1000px) {
+  .how-it-works-section .how-it-works-div {
+    display: block;
+  }
+}
 .how-it-works-section .how-it-works-div p {
   color: #41340C;
   font-size: 1.8rem;
@@ -585,8 +664,24 @@ footer address a {
     line-height: 2.2rem;
   }
 }
+@media (max-width: 1000px) {
+  .how-it-works-section .how-it-works-div p {
+    width: 70rem;
+    height: 15rem;
+    padding-top: 3rem;
+    font-size: 1.6rem;
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .how-it-works-section .how-it-works-div .tabs-item-selected {
+    display: block;
+  }
+}
 .join-today-button {
   display: block;
+  text-align: center;
+  line-height: 4.8rem;
   margin: 1rem auto;
   height: 4.8rem;
   width: 24rem;
@@ -597,38 +692,23 @@ footer address a {
   font-size: 2.4rem;
   font-family: 'Open Sans', sans-serif;
 }
-.join-today-button p {
-  text-align: center;
-  padding-top: 1rem;
-}
 @media (max-width: 1439px) {
   .join-today-button {
     margin: 1rem auto;
   }
 }
 .join-today-button#bottom-join-today {
-  display: block;
-  margin: 0 auto;
-  transform: translate(-35rem, 26.5rem);
-  position: absolute;
+  margin: 4rem auto;
+  position: relative;
 }
-@media (max-width: 1439px) {
+@media (max-width: 1000px) {
   .join-today-button#bottom-join-today {
-    transform: translate(-30rem, 26.5rem);
+    height: 4.8rem;
+    margin-bottom: 4rem;
+    margin-left: 25rem;
   }
-}
-.join-today-button#bottom-join-today p {
-  text-align: center;
-  padding-top: 1rem;
-  margin-left: -7.5rem;
-  color: #EDE3C2;
-  font-size: 2.4rem;
-  font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 1439px) {
-  .join-today-button#bottom-join-today p {
-    margin-left: -3rem;
-  }
 }
 .footer-top-spacer {
   background: white;
