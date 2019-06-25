@@ -207,6 +207,7 @@ footer address {
   position: absolute;
   margin: -41.4rem 8.8rem;
   z-index: 1;
+  opacity: 0;
 }
 .top-content .arrow-up h2 {
   color: #1E3A46;
@@ -229,6 +230,7 @@ footer address {
   left: 8.8rem;
   top: -13.4rem;
   border-top: 0.1rem solid black;
+  opacity: 0;
 }
 .top-content .product-features .three-features {
   display: flex;
