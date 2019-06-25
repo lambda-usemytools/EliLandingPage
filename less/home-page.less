@@ -56,6 +56,10 @@
             border-top: 0.1rem solid black;
             opacity: 0;
             margin-bottom: 43rem;
+            a
+            {
+                text-decoration: none;
+            }
             .three-features
             {
                 .fbMixin(row nowrap, space-around, center);
@@ -178,6 +182,10 @@
             font-size: 1.8rem;
         }
         }
+        a
+        {
+            text-decoration: none;
+        }
         .sign-up-now-button
         {
             background-color: @goldYellow;
@@ -190,6 +198,13 @@
             border-radius: 0.6rem;
             margin-top: 4.7rem;
             margin-left: 19rem;
+            border: 3px solid transparent;
+            text-align: center;
+            p
+            {
+                margin-left: -13.5rem;
+                margin-top: 1.2rem;
+            }
         }
     }
 }
@@ -236,10 +251,15 @@
 {
     background-color: @lighterTan;
     height: 40.5rem;
+    a
+    {
+        text-decoration: none;
+    }
     h2
     {
-        padding-left: 7.2rem;
+        padding-left: 3rem;
         padding-top: 1.8rem;
+        margin-bottom: 2rem;
         color: @blueTextColor;
         font-size: 2.8rem;
         font-weight: bold;
@@ -262,25 +282,31 @@
                 font-size: 1.4rem;
             }
         }
-        .a
-        {
-            margin-bottom: 13.5rem;
-        }
+        // .a
+        // {
+        //     margin-bottom: 13.5rem;
+        // }
     }
 }
 
 .join-today-button
 {
+    
     display: block;
     margin: 1rem auto;
     height: 4.8rem;
     width: 24.0rem;
     border-radius: 1rem;
-    border: none;
+    border: 3px solid transparent;
     background-color: #488EAC;
     color: @lighterTan;
     font-size: 2.4rem;
     font-family: 'Open Sans', sans-serif;
+    p
+    {
+        text-align: center;
+        padding-top: 1rem;
+    }
     @media (max-width: 1439px)
         {
             margin: 1rem auto;
@@ -290,11 +316,24 @@
     {
         display: block;
         margin:0 auto;
-        transform: translate(50rem, 28.5rem);
+        transform: translate(-35rem, 26.5rem);
         position: absolute;
         @media (max-width: 1439px)
         {
-            transform: translate(33rem, 28.5rem);
+            transform: translate(-30rem, 26.5rem);
+        }
+        p
+        {
+            text-align: center;
+            padding-top: 1rem;
+            margin-left: -7.5rem;
+            color: @lighterTan;
+            font-size: 2.4rem;
+            font-family: 'Open Sans', sans-serif;
+            @media (max-width: 1439px)
+            {
+                margin-left: -3rem;
+            }
         }
     }
 }

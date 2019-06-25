@@ -183,13 +183,14 @@ footer div a {
   display: block;
   text-decoration: none;
   font-size: 2rem;
-  padding: 0.8rem;
+  padding: 1rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
 }
 footer p {
   display: block;
-  padding: 0.8rem;
+  padding-left: 0.8rem;
+  padding-top: 0.5rem;
   font-size: 2rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
@@ -199,9 +200,13 @@ footer address {
   display: block;
   text-decoration: none;
   font-size: 2rem;
-  padding: 0.8rem;
+  padding: 1rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
+}
+footer address a {
+  display: inline-block;
+  padding: 0;
 }
 .top-content .arrow-features-div {
   margin: 0 auto;
@@ -252,6 +257,9 @@ footer address {
   border-top: 0.1rem solid black;
   opacity: 0;
   margin-bottom: 43rem;
+}
+.top-content .arrow-features-div .product-features a {
+  text-decoration: none;
 }
 .top-content .arrow-features-div .product-features .three-features {
   display: flex;
@@ -367,6 +375,9 @@ footer address {
     font-size: 1.8rem;
   }
 }
+.why-use-section .why-use-div a {
+  text-decoration: none;
+}
 .why-use-section .why-use-div .sign-up-now-button {
   background-color: #DAAB1D;
   width: 24rem;
@@ -378,6 +389,12 @@ footer address {
   border-radius: 0.6rem;
   margin-top: 4.7rem;
   margin-left: 19rem;
+  border: 3px solid transparent;
+  text-align: center;
+}
+.why-use-section .why-use-div .sign-up-now-button p {
+  margin-left: -13.5rem;
+  margin-top: 1.2rem;
 }
 .meet-users-section {
   padding-bottom: 4.2rem;
@@ -416,9 +433,13 @@ footer address {
   background-color: #EDE3C2;
   height: 40.5rem;
 }
+.how-it-works-section a {
+  text-decoration: none;
+}
 .how-it-works-section h2 {
-  padding-left: 7.2rem;
+  padding-left: 3rem;
   padding-top: 1.8rem;
+  margin-bottom: 2rem;
   color: #1E3A46;
   font-size: 2.8rem;
   font-weight: bold;
@@ -443,20 +464,21 @@ footer address {
     font-size: 1.4rem;
   }
 }
-.how-it-works-section .how-it-works-div .a {
-  margin-bottom: 13.5rem;
-}
 .join-today-button {
   display: block;
   margin: 1rem auto;
   height: 4.8rem;
   width: 24rem;
   border-radius: 1rem;
-  border: none;
+  border: 3px solid transparent;
   background-color: #488EAC;
   color: #EDE3C2;
   font-size: 2.4rem;
   font-family: 'Open Sans', sans-serif;
+}
+.join-today-button p {
+  text-align: center;
+  padding-top: 1rem;
 }
 @media (max-width: 1439px) {
   .join-today-button {
@@ -466,12 +488,25 @@ footer address {
 .join-today-button#bottom-join-today {
   display: block;
   margin: 0 auto;
-  transform: translate(50rem, 28.5rem);
+  transform: translate(-35rem, 26.5rem);
   position: absolute;
 }
 @media (max-width: 1439px) {
   .join-today-button#bottom-join-today {
-    transform: translate(33rem, 28.5rem);
+    transform: translate(-30rem, 26.5rem);
+  }
+}
+.join-today-button#bottom-join-today p {
+  text-align: center;
+  padding-top: 1rem;
+  margin-left: -7.5rem;
+  color: #EDE3C2;
+  font-size: 2.4rem;
+  font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 1439px) {
+  .join-today-button#bottom-join-today p {
+    margin-left: -3rem;
   }
 }
 .footer-top-spacer {
