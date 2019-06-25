@@ -5,23 +5,30 @@
 
 //load anim.
 
-TweenMax.fromTo(".product-features", .8, {y:80, opacity: 0}, {y:0, opacity: 1, delay: 0.5, ease:Back.easeOut});
-TweenMax.fromTo(".arrow-up", 0.8, {y: 80, opacity: 0}, {y: 0, opacity: 1, delay: .5, ease:Back.easeOut});
+TweenMax.fromTo(".product-features", .5, {y:80, opacity: 0}, {y:0, opacity: 1, delay: 0.5, ease:Back.easeOut});
+TweenMax.fromTo(".arrow-up", 0.5, {y: 80, opacity: 0}, {y: 0, opacity: 1, delay: .5, ease:Back.easeOut});
 
 
-//hover anim for feature cards
+// Hover anim for feature cards
+
+let yMoveUp = -10;
+let yMoveDown = 7;
+if (window.matchMedia("(max-width: 1439px)")) { yMoveUp = -6; yMoveDown = 5; }
+else if (window.matchMedia("(max-width: 799px)")) { yMoveUp = -10; yMoveDown = 7; }
 
 let featureCards = document.querySelectorAll(".feature");
 
 featureCards.forEach(card => card.addEventListener("mouseover", _ => 
 {
-    TweenMax.to(card, 0.5, {y: -10, scale: 1.03, boxShadow: '0 0 20px rgba(0,0,0,0.4)'});
+    TweenMax.to(card, 0.5, {y: yMoveUp, scale: 1.03, boxShadow: '0 0 20px rgba(0,0,0,0.4)'});
 }));
 
 featureCards.forEach(card => card.addEventListener("mouseleave", _ => 
 {
-    TweenMax.to(card, 0.5, {y: 7, scale: 1.03, boxShadow: '0 0 20px rgba(0,0,0,0)'});
+    TweenMax.to(card, 0.5, {y: yMoveDown, scale: 1.03, boxShadow: '0 0 20px rgba(0,0,0,0)'});
 }));
+
+// Button hover effect
 
 let joinBtns = Array.from(document.querySelectorAll(".join-today-button"));
 
