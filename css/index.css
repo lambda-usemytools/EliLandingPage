@@ -982,25 +982,28 @@ footer address a {
   width: 30rem;
 }
 .team-about .team-member .role {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
   padding-left: 2rem;
+  height: 20rem;
   max-width: 50rem;
 }
-.team-about .team-member .role h3 {
-  padding-top: 4rem;
-}
 .team-about .team-member .role p {
-  padding-top: 6rem;
-  line-height: 2.4rem;
+  padding-bottom: 1rem;
 }
 .team-about .team-member .quote-and-social {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
   width: 20rem;
+  height: 20rem;
   padding-left: 6rem;
 }
-.team-about .team-member .quote-and-social p {
-  padding-top: 4rem;
-}
 .team-about .team-member .quote-and-social ul {
-  padding-top: 6rem;
+  padding-bottom: 1rem;
 }
 .team-about .team-member p {
   font-size: 2rem;
