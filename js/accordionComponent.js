@@ -22,7 +22,7 @@ class AccordionLeaf
             else if(!this.leafIsOpen) { this.openLeaf(this.leaf); }
         })
     }
-    openLeaf(leaf)
+    openLeaf()
     {
         this.leaves.accLeaves.forEach(leaf => leaf.closeLeaf());
         this.leafIsOpen = true;
@@ -30,13 +30,16 @@ class AccordionLeaf
         this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
         this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide")
 
-        // function swapOpen(elem)
-        // {
-        //     this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
-        //     this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide");
-        // }
+        function swapOpen(elem)
+        {
+            this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
+            this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide");
+        }
 
-        let opentl = new TimelineMax
+        let tlOpen = new TimelineMax();
+        // tlOpen.to()
+
+
     }
     closeLeaf(leaf)
     {
@@ -52,4 +55,7 @@ let leaves = Array.from(document.querySelectorAll(".team-member"));
 
 let teamAccordion;
 if(leaves) teamAccordion = new Accordion(leaves);
-teamAccordion.accLeaves.forEach(accLeaf => accLeaf.closeLeaf());
+teamAccordion.accLeaves.forEach(accLeaf => 
+{   if(accLeaf.leafIsOpen) accLeaf.closeLeaf();
+});
+
