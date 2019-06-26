@@ -35,9 +35,10 @@ class AccordionLeaf
             this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
             this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide");
         }
-
-        let tlOpen = new TimelineMax();
-        // tlOpen.to()
+        // TweenMax.set(this.leaf, {height: 30});
+        TweenMax.fromTo(this.leaf, .7, {opacity: 0, }, {opacity: 1, height:"auto", });
+        // let tlOpen = new TimelineMax();
+        // tlOpen.to(this.leaf, .7, )
 
 
     }
