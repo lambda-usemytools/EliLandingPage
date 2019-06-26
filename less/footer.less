@@ -4,7 +4,12 @@ footer
     .fbMixin(row nowrap, space-around, flex-start);
     background-color: #488EAC;
     height: 19.5rem;
-
+    @media(max-width: 767px)
+    {
+        height: auto;
+        flex-flow: column;
+        align-items: center;
+    }
     h3
     {
         font-size: 2rem;
