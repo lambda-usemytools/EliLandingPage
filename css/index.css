@@ -147,6 +147,9 @@ h1 {
     max-width: 769px;
   }
 }
+body {
+  cursor: pointer;
+}
 header {
   background-color: #DAAB1D;
   height: 12.8rem;
