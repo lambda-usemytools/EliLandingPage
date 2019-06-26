@@ -14,9 +14,17 @@ header
             margin-left: 3rem;
             // font-size: 3rem;
         }
+        @media (max-width: 767px)
+        {
+            font-size: 2.5rem;
+        }
     }
     nav
     {
+        @media(max-width:767px)
+        {
+            display: none;
+        }
         a
         {
             color: #1E3A46;
@@ -36,5 +44,32 @@ header
             }
             
         }
+    }
+
+    .burger-icon
+    {
+        display:none;
+        @media(max-width: 767px)
+        {
+            display: block;
+        }
+        margin-right: 2rem;
+        .burger-line
+        {
+            width: 30px;
+            background-color: @brownTextColor;
+            height: 5px;
+            margin-bottom: 6px;
+        }
+    }
+    .mobile-signin
+    {
+        font-size: 2rem;
+        width: 7rem;
+        text-align: center;
+        height: 3rem;
+        background-color: @bgBlue;
+        line-height: 3rem;
+        border-radius: 14px;
     }
 }

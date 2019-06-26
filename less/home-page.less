@@ -78,7 +78,8 @@
         .product-features
         {
             width: 126.4rem;
-            height: 54.7rem;
+            // height: 54.7rem;
+            height: auto;
             background-color: @lighterTan;
             position: relative;
             // left: 8.8rem;
@@ -92,21 +93,21 @@
                 width: 100rem;
                 top: 30rem;
                 margin-bottom: 31.5rem;
-                height: 45rem;
+                // height: 45rem;
             }
             @media (max-width: 1000px)
             {
                 width: @pgContWidth768;
                 top: 18rem;
                 margin-bottom: 31.5rem;
-                height: 45rem;
+                // height: 45rem;
             }
             @media (max-width: 767px)
             {
                 width: 100vw;
                 top: 9rem;
                 margin-bottom: 31.5rem;
-                height: 55rem;
+                // height: 55rem;
                 margin-bottom: 22rem;
             }
 
@@ -116,6 +117,7 @@
             }
             .three-features
             {
+                padding-bottom: 2rem;
                 .fbMixin(row nowrap, space-around, center);
                 @media (max-width: 767px)
                 {
@@ -333,7 +335,14 @@
             @media (max-width: 1000px)
             {
                 width: 18rem;
-                transform: translate(-8rem, 0);
+                // transform: translate(-8rem, 0);
+            }
+            @media (max-width: 767px)
+            {
+                width: 18rem;
+                margin: auto;
+                margin-top: 2rem;
+                // transform: translate(-8rem, 0);
             }
         }
     }
