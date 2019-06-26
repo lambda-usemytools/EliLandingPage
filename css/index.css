@@ -204,6 +204,8 @@ footer h3 {
     padding-right: 1rem;
   }
 }
+@media (max-width: 767px) {
+}
 footer div a {
   display: block;
   text-decoration: none;
@@ -211,6 +213,11 @@ footer div a {
   padding: 1rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 767px) {
+  footer div a {
+    font-size: 1.6rem;
+  }
 }
 footer p {
   display: block;
@@ -294,9 +301,10 @@ footer address a {
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-bottom: 22.15vw solid #C0B594;
-    margin: -18rem auto;
+    margin: -9rem auto;
   }
   .top-content .arrow-features-div .arrow-up h2 {
+    display: none;
     font-size: 1.6rem;
     top: 12vw;
     line-height: 2rem;
@@ -332,9 +340,10 @@ footer address a {
 @media (max-width: 767px) {
   .top-content .arrow-features-div .product-features {
     width: 100vw;
-    top: 18rem;
+    top: 9rem;
     margin-bottom: 31.5rem;
-    height: 45rem;
+    height: 55rem;
+    margin-bottom: 22rem;
   }
 }
 .top-content .arrow-features-div .product-features a {
@@ -345,6 +354,11 @@ footer address a {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: center;
+}
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features .three-features {
+    flex-flow: column;
+  }
 }
 .top-content .arrow-features-div .product-features .three-features .feature-name {
   height: 8.8rem;
@@ -370,6 +384,11 @@ footer address a {
     padding-top: 3rem;
   }
 }
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-name p {
+    padding-top: 1.8rem;
+  }
+}
 @media (max-width: 1439px) {
   .top-content .arrow-features-div .product-features .three-features .feature-name {
     width: 26rem;
@@ -378,6 +397,12 @@ footer address a {
 @media (max-width: 1000px) {
   .top-content .arrow-features-div .product-features .three-features .feature-name {
     width: 20rem;
+  }
+}
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-name {
+    width: 30rem;
+    height: 5rem;
   }
 }
 .top-content .arrow-features-div .product-features .three-features .feature-details {
@@ -405,6 +430,11 @@ footer address a {
     line-height: 2rem;
   }
 }
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-details p {
+    display: none;
+  }
+}
 @media (max-width: 1439px) {
   .top-content .arrow-features-div .product-features .three-features .feature-details {
     width: 26rem;
@@ -414,6 +444,11 @@ footer address a {
 @media (max-width: 1000px) {
   .top-content .arrow-features-div .product-features .three-features .feature-details {
     width: 20rem;
+  }
+}
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features .three-features .feature-details {
+    display: none;
   }
 }
 .top-content img {
@@ -453,6 +488,11 @@ footer address a {
   justify-content: space-around;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .why-use-section .why-use-div {
+    flex-flow: column;
+  }
+}
 .why-use-section .why-use-div h4 {
   color: #41340C;
   font-size: 2.4rem;
@@ -470,6 +510,12 @@ footer address a {
   .why-use-section .why-use-div h4 {
     line-height: 2.6rem;
     padding-left: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .why-use-section .why-use-div h4 {
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
   }
 }
 .why-use-section .why-use-div p {
@@ -491,6 +537,11 @@ footer address a {
     padding-right: 1rem;
   }
 }
+@media (max-width: 767px) {
+  .why-use-section .why-use-div p {
+    display: none;
+  }
+}
 .why-use-section .why-use-div a {
   text-decoration: none;
 }
@@ -504,9 +555,11 @@ footer address a {
   border: none;
   border-radius: 0.6rem;
   margin-top: 4.7rem;
-  margin-left: 19rem;
+  margin-left: 16rem;
   border: 3px solid transparent;
   text-align: center;
+  display: block;
+  line-height: 6.6rem;
 }
 .why-use-section .why-use-div .sign-up-now-button p {
   margin-left: -13.5rem;
@@ -595,10 +648,19 @@ footer address a {
 .how-it-works-section .how-it-works-top {
   display: block;
 }
+.how-it-works-section .how-it-works-top .tabs-link-selected {
+  background-color: #DAAB1D;
+}
 @media (max-width: 1000px) {
   .how-it-works-section .how-it-works-top h2 {
     margin-left: -4rem;
     padding-right: 9rem;
+  }
+}
+@media (max-width: 767px) {
+  .how-it-works-section .how-it-works-top h2 {
+    margin-left: 0rem;
+    padding-right: 5rem;
   }
 }
 @media (max-width: 1000px) {
@@ -617,12 +679,19 @@ footer address a {
     border-left: 1px solid black;
     padding-top: 2rem;
   }
-  .how-it-works-section .how-it-works-top .tabs-link:last-child {
-    border-right: 1px solid black;
+}
+@media (max-width: 1000px) and (max-width: 767px) {
+  .how-it-works-section .how-it-works-top .tabs-link {
+    width: 14rem;
   }
 }
 .how-it-works-section .hide-tabs {
   display: none;
+}
+@media (max-width: 767px) {
+  .how-it-works-section {
+    height: 48rem;
+  }
 }
 .how-it-works-section a {
   text-decoration: none;
@@ -673,6 +742,12 @@ footer address a {
     display: none;
   }
 }
+@media (max-width: 767px) {
+  .how-it-works-section .how-it-works-div p {
+    line-height: 1.8rem;
+    width: 90vw;
+  }
+}
 @media (max-width: 1000px) {
   .how-it-works-section .how-it-works-div .tabs-item-selected {
     display: block;
@@ -708,7 +783,10 @@ footer address a {
     margin-left: 25rem;
   }
 }
-@media (max-width: 1439px) {
+@media (max-width: 767px) {
+  .join-today-button#bottom-join-today {
+    margin: 13rem auto 0 auto;
+  }
 }
 .footer-top-spacer {
   background: white;

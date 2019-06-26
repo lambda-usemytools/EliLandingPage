@@ -64,12 +64,14 @@
                 border-left: 50vw solid transparent;
                 border-right: 50vw solid transparent;
                 border-bottom: 22.15vw solid @darkerTan;
-                margin: -18rem auto;
+                margin: -9rem auto;
                 h2
                 {
+                    display: none;
                     font-size: 1.6rem;
                     top: 12vw;
                     line-height: 2rem;
+
                 }
             }
         }
@@ -102,9 +104,10 @@
             @media (max-width: 767px)
             {
                 width: 100vw;
-                top: 18rem;
+                top: 9rem;
                 margin-bottom: 31.5rem;
-                height: 45rem;
+                height: 55rem;
+                margin-bottom: 22rem;
             }
 
             a
@@ -114,7 +117,10 @@
             .three-features
             {
                 .fbMixin(row nowrap, space-around, center);
-
+                @media (max-width: 767px)
+                {
+                    flex-flow: column;
+                }
                 .feature-name
                 {
                     height: 8.8rem;
@@ -135,6 +141,10 @@
                         {
                             padding-top:3rem;
                         }
+                        @media (max-width: 767px)
+                        {
+                            padding-top:1.8rem;
+                        }
                     }
                     border: 0.3rem solid #6E5710;
                     border-radius: 0.3rem;
@@ -145,6 +155,11 @@
                     @media (max-width: 1000px)
                     {
                         width: 20rem;
+                    }
+                    @media (max-width: 767px)
+                    {
+                        width: 30rem;
+                        height: 5rem;
                     }
                 }
 
@@ -171,6 +186,10 @@
                             font-size: 1.6rem;
                             line-height: 2rem;
                         }
+                        @media (max-width: 767px)
+                        {
+                            display: none;
+                        }
                     }
                     @media (max-width: 1439px)
                     {
@@ -180,6 +199,10 @@
                     @media (max-width: 1000px)
                     {
                         width: 20rem;
+                    }
+                    @media (max-width: 767px)
+                    {
+                        display: none;
                     }
                 }
             }
@@ -228,6 +251,10 @@
     .why-use-div
     {
         .fbMixin(row nowrap, space-around);
+        @media (max-width: 767px)
+        {
+            flex-flow: column;
+        }
         h4
         {
             color: @brownTextColor;
@@ -245,6 +272,11 @@
             {
                 line-height: 2.6rem;
                 padding-left: 2rem;
+            }
+            @media (max-width: 767px)
+            {
+                line-height: 2.2rem;
+                margin-bottom: 1rem;
             }
         }
         p
@@ -264,6 +296,10 @@
                 padding-left: 3rem;
                 padding-right: 1rem;
             }
+            @media (max-width: 767px)
+            {
+                display: none;
+            }
         }
         a
         {
@@ -280,9 +316,11 @@
             border: none;
             border-radius: 0.6rem;
             margin-top: 4.7rem;
-            margin-left: 19rem;
+            margin-left: 16rem;
             border: 3px solid transparent;
             text-align: center;
+            display: block;
+            line-height: 6.6rem;
             p
             {
                 margin-left: -13.5rem;
@@ -378,15 +416,24 @@
 
 .how-it-works-section
 {
+
     .how-it-works-top
     {
-        
+        .tabs-link-selected
+        {
+            background-color: @goldYellow;
+        }
         h2
         {
             @media(max-width: 1000px)
             {
                 margin-left: -4rem;
                 padding-right: 9rem;
+            }
+            @media(max-width: 767px)
+            {
+                margin-left: 0rem;
+                padding-right: 5rem;
             }
         }
         display: block;
@@ -404,7 +451,11 @@
                 padding-top: 2rem;
                 &:last-child
                 {
-                    border-right: 1px solid black;
+                    // border-right: 1px solid black;
+                }
+                @media(max-width: 767px)
+                {
+                    width: 14rem;
                 }
             }
         }
@@ -417,6 +468,10 @@
 
     background-color: @lighterTan;
     height: 40.5rem;
+    @media(max-width: 767px)
+    {
+        height: 48rem;
+    }
     a
     {
         text-decoration: none;
@@ -466,6 +521,11 @@
                 padding-top: 3rem;
                 font-size: 1.6rem;
                 display: none;
+            }
+            @media(max-width: 767px)
+            {
+                line-height: 1.8rem;
+                width: 90vw
             }
         }
         @media (max-width: @pgContWidth1k)
@@ -520,16 +580,9 @@
             // background: green;
         }
         
-        
-        
-        
-        @media (max-width: 1439px)
+        @media (max-width: 767px)
         {
-            // margin-left: -3rem;
-        }
-        @media (max-width: @pgContWidth1k)
-        {
-
+            margin: 13rem auto 0 auto;
         }
         
     }
