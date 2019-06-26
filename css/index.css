@@ -229,13 +229,24 @@ header .mobile-signin {
 }
 header .mobile-menu {
   position: fixed;
-  top: 4rem;
+  top: 5rem;
   right: 0;
   z-index: 3;
   width: 20rem;
   height: auto;
   background-color: transparent;
   display: none;
+}
+header .mobile-menu .mobile-menu-close {
+  font-family: 'Open Sans', sans-serif;
+  color: #1E3A46;
+  font-size: 2.6rem;
+  background-color: rgba(72, 142, 172, 0.836);
+  width: 20rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-bottom: 1px solid black;
 }
 header .mobile-menu a {
   font-family: 'Open Sans', sans-serif;
@@ -266,18 +277,32 @@ footer {
   background-color: #488EAC;
   height: 19.5rem;
 }
+footer .footer-email-mobile {
+  display: none;
+}
+footer .footer-phone-mobile {
+  display: none;
+}
 @media (max-width: 767px) {
   footer {
     height: auto;
     flex-flow: column;
     align-items: center;
-    padding-bottom: 2rem;
   }
   footer .footer-contact {
-    margin-left: 5.5rem;
+    margin-bottom: 2rem;
   }
-  footer .footer-legal {
-    margin-left: -1rem;
+  footer .footer-email {
+    display: none;
+  }
+  footer .footer-email-mobile {
+    display: block;
+  }
+  footer .footer-phone {
+    display: none;
+  }
+  footer .footer-phone-mobile {
+    display: block;
   }
 }
 footer h3 {
@@ -294,6 +319,11 @@ footer h3 {
   }
 }
 @media (max-width: 767px) {
+  footer h3 {
+    text-align: center;
+    margin: 1.4rem auto;
+    padding: 0;
+  }
 }
 footer div a {
   display: block;
@@ -305,7 +335,10 @@ footer div a {
 }
 @media (max-width: 767px) {
   footer div a {
+    text-align: center;
     font-size: 1.6rem;
+    margin: 1.8rem auto;
+    padding: 0;
   }
 }
 footer p {
@@ -317,17 +350,29 @@ footer p {
   font-family: 'Open Sans', sans-serif;
   line-height: 2.7rem;
 }
+@media (max-width: 767px) {
+  footer p {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 0;
+  }
+}
 footer address {
   display: block;
   text-decoration: none;
   font-size: 2rem;
-  padding: 1rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
 }
 footer address a {
   display: inline-block;
-  padding: 0;
+}
+@media (max-width: 767px) {
+  footer address {
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: -1.4rem;
+  }
 }
 .top-section-about {
   width: 100%;
@@ -345,10 +390,10 @@ footer address a {
   font-size: 2rem;
   color: #1E3A46;
   font-family: 'Open Sans', sans-serif;
-  width: 90vw;
+  width: 90%;
   line-height: 3rem;
   padding-top: 2rem;
-  margin-left: 5vw;
+  margin-left: 5%;
 }
 .top-content .arrow-features-div {
   margin: 0 auto;

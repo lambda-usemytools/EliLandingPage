@@ -59,4 +59,4 @@ class TabItem
 
 let hiwTabs = document.querySelector(".how-it-works-section");
 
-new Tabs(hiwTabs);
+if (hiwTabs) new Tabs(hiwTabs);

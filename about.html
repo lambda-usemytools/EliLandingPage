@@ -18,18 +18,34 @@
     <div class="page-container">
 
         <header>
-            <h1>Use My Tools</h1>
+            <h1 class="h1-about">About<br>Use My Tools</h1>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#">FAQ</a>
+                <a href="faq.html">FAQ</a>
                 <a href="https://gracious-ptolemy-4a8ec7.netlify.com/create-account">Create Account</a>
                 <a href="https://gracious-ptolemy-4a8ec7.netlify.com/">Sign In</a>
             </nav>
 
+            <a href="https://gracious-ptolemy-4a8ec7.netlify.com/" class="mobile-signin"><div>Sign In</div></a>
+
+            <div class="burger-icon">
+                <div class="burger-line mobile-menu-item"></div>
+                <div class="burger-line mobile-menu-item"></div>
+                <div class="burger-line mobile-menu-item"></div>
+            </div>
+
+            <div class="mobile-menu">
+                <div class="mobile-menu-item mobile-menu-close"><img src="assets/images/mobileMenuIcon.png" alt="mobile menu icon"></div>
+                <a href="https://gracious-ptolemy-4a8ec7.netlify.com/" class="mobile-menu-item">Sign In</a>
+                <a href="https://gracious-ptolemy-4a8ec7.netlify.com/create-account" class="mobile-menu-item">Create Account</a>
+                <a href="index.html" class="mobile-menu-item">Home</a>
+                <a href="faq.html" class="mobile-menu-item">FAQ</a>
+            </div>
+
         </header>
 
         <section class="top-section-about">
-            <img src="assets/images/barn-images-t5YUoHW6zRo-unsplash.jpg" alt="">
+            <img src="assets/images/heroImage.png" alt="">
 
         </section>
 
@@ -71,7 +87,8 @@
 
 
     </div>
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="js/mobileMenu.js"></script>
     <script src="js/tabComponent.js"></script>
 </body>

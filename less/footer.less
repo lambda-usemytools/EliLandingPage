@@ -4,19 +4,43 @@ footer
     .fbMixin(row nowrap, space-around, flex-start);
     background-color: #488EAC;
     height: 19.5rem;
+    .footer-email-mobile
+    {
+        display: none;
+    }
+    .footer-phone-mobile
+    {
+        display: none;
+    }
     @media(max-width: 767px)
     {
         height: auto;
         flex-flow: column;
         align-items: center;
-        padding-bottom: 2rem;
+        // padding-bottom: 2rem;
         .footer-contact
         {
-            margin-left: 5.5rem;
+            margin-bottom: 2rem;
         }
         .footer-legal
         {
-            margin-left: -1rem;
+            // margin-left: -1rem;
+        }
+        .footer-email
+        {
+            display:none;
+        }
+        .footer-email-mobile
+        {
+            display: block;
+        }
+        .footer-phone
+        {
+            display: none;
+        }
+        .footer-phone-mobile
+        {
+            display: block;
         }
     }
     h3
@@ -34,7 +58,9 @@ footer
         }
         @media (max-width: 767px)
         {
-            // margin: auto;
+            text-align: center;
+            margin: 1.4rem auto;
+            padding: 0;
         }
     }
     div a
@@ -47,7 +73,10 @@ footer
         font-family: 'Open Sans', sans-serif;
         @media (max-width: 767px)
         {
+            text-align: center;
             font-size: 1.6rem;
+            margin: 1.8rem auto;
+            padding: 0;
         }
     }
     p
@@ -59,19 +88,34 @@ footer
         color: @lighterTan;
         font-family: 'Open Sans', sans-serif;
         line-height: 2.7rem;
+        @media (max-width: 767px)
+        {
+            text-align: center;
+            font-size: 1.6rem;
+            // margin: 1.8rem auto;
+            padding: 0;
+        }
     }
     address
     {
         display: block;
         text-decoration: none;
         font-size: 2rem;
-        padding: 1rem;
+        // padding: 1rem;
         color: @lighterTan;
+        
         font-family: 'Open Sans', sans-serif;
         a
         {
             display: inline-block;
-            padding: 0;
+            // padding: 0;
+            
+        }
+        @media (max-width: 767px)
+        {
+            text-align: center;
+            font-size: 1.6rem;
+            margin-top: -1.4rem;
         }
     }
 }
