@@ -195,6 +195,8 @@ header nav a:hover {
 }
 header .burger-icon {
   display: none;
+  width: 30px;
+  height: 27px;
   margin-right: 2rem;
 }
 @media (max-width: 767px) {
@@ -206,7 +208,7 @@ header .burger-icon .burger-line {
   width: 30px;
   background-color: #1E3A46;
   height: 5px;
-  margin-bottom: 6px;
+  margin: 3px 0;
 }
 header .mobile-signin {
   display: none;
@@ -326,6 +328,27 @@ footer address {
 footer address a {
   display: inline-block;
   padding: 0;
+}
+.top-section-about {
+  width: 100%;
+  overflow: hidden;
+}
+.top-section-about img {
+  width: 100%;
+}
+.blurb {
+  background-color: #EDE3C2;
+  height: 40rem;
+  margin-top: -2px;
+}
+.blurb p {
+  font-size: 2rem;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+  width: 90vw;
+  line-height: 3rem;
+  padding-top: 2rem;
+  margin-left: 5vw;
 }
 .top-content .arrow-features-div {
   margin: 0 auto;
