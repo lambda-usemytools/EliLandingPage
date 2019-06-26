@@ -990,6 +990,7 @@ footer address a {
 }
 .team-about .team-member .role p {
   padding-top: 6rem;
+  line-height: 2.4rem;
 }
 .team-about .team-member .quote-and-social {
   width: 20rem;
