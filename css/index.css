@@ -382,6 +382,7 @@ footer address a {
     border-right: 50vw solid transparent;
     border-bottom: 22.15vw solid #C0B594;
     margin: -9rem auto;
+    margin-top: -22.4vw;
   }
   .top-content .arrow-features-div .arrow-up h2 {
     display: none;
