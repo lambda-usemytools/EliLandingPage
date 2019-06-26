@@ -974,7 +974,15 @@ footer address a {
   padding: 1rem;
   border-radius: 12px;
 }
+.team-about .team-member img {
+  width: 15rem;
+  margin-top: 1rem;
+}
+.team-about .team-member .name-pic {
+  width: 30rem;
+}
 .team-about .team-member .role {
+  padding-left: 2rem;
   max-width: 50rem;
 }
 .team-about .team-member .role h3 {
@@ -982,6 +990,10 @@ footer address a {
 }
 .team-about .team-member .role p {
   padding-top: 6rem;
+}
+.team-about .team-member .quote-and-social {
+  width: 20rem;
+  padding-left: 6rem;
 }
 .team-about .team-member .quote-and-social p {
   padding-top: 4rem;
