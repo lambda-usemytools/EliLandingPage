@@ -269,6 +269,13 @@ footer {
     height: auto;
     flex-flow: column;
     align-items: center;
+    padding-bottom: 2rem;
+  }
+  footer .footer-contact {
+    margin-left: 5.5rem;
+  }
+  footer .footer-legal {
+    margin-left: -1rem;
   }
 }
 footer h3 {
