@@ -214,6 +214,7 @@ header .mobile-signin {
   font-size: 2rem;
   width: 7.5rem;
   text-align: center;
+  text-decoration: none;
   height: 3rem;
   background-color: #488EAC;
   line-height: 3rem;
