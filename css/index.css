@@ -204,18 +204,56 @@ header .burger-icon {
 }
 header .burger-icon .burger-line {
   width: 30px;
-  background-color: #41340C;
+  background-color: #1E3A46;
   height: 5px;
   margin-bottom: 6px;
 }
 header .mobile-signin {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
-  width: 7rem;
+  width: 7.5rem;
   text-align: center;
   height: 3rem;
   background-color: #488EAC;
   line-height: 3rem;
   border-radius: 14px;
+}
+@media (max-width: 767px) {
+  header .mobile-signin {
+    display: block;
+  }
+}
+header .mobile-menu {
+  position: fixed;
+  top: 4rem;
+  right: 0;
+  z-index: 3;
+  width: 20rem;
+  height: auto;
+  background-color: transparent;
+  display: none;
+}
+header .mobile-menu a {
+  font-family: 'Open Sans', sans-serif;
+  color: #1E3A46;
+  text-decoration: none;
+  font-size: 2.6rem;
+  background-color: rgba(72, 142, 172, 0.836);
+  width: 20rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+header .mobile-menu a:last-child {
+  border: none;
+}
+header .mobile-menu-show {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
 }
 footer {
   display: flex;

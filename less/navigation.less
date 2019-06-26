@@ -5,7 +5,7 @@ header
     .fbMixin;
     h1
     {
-        color: #1E3A46;
+        color: @blueTextColor;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         margin-left: 8rem;
@@ -27,7 +27,7 @@ header
         }
         a
         {
-            color: #1E3A46;
+            color: @blueTextColor;
             font-family: 'Open Sans', sans-serif;
             text-decoration: none;
             font-size: 2rem;
@@ -57,19 +57,58 @@ header
         .burger-line
         {
             width: 30px;
-            background-color: @brownTextColor;
+            background-color: @blueTextColor;
             height: 5px;
             margin-bottom: 6px;
         }
     }
     .mobile-signin
     {
+        display: none;
+        font-family: 'Open Sans', sans-serif;
         font-size: 2rem;
-        width: 7rem;
+        width: 7.5rem;
         text-align: center;
         height: 3rem;
         background-color: @bgBlue;
         line-height: 3rem;
         border-radius: 14px;
+        @media(max-width: 767px)
+        {
+            display: block;
+        }
+    }
+    .mobile-menu
+    {
+        
+        position: fixed;
+        top:4rem;
+        right:0;
+        z-index: 3;
+        width: 20rem;
+        height: auto;
+        background-color: transparent;
+        display: none;
+        a
+        {
+            font-family: 'Open Sans', sans-serif;
+            color: @blueTextColor;
+            text-decoration: none;
+            font-size: 2.6rem;
+            background-color: @bgBlueTransp;
+            width: 20rem;
+            height: 4rem;
+            line-height: 4rem;
+            text-align: center;
+            border-bottom: 1px solid black;
+            &:last-child
+            {
+                border: none;
+            }
+        }
+    }
+    .mobile-menu-show
+    {
+        .fbMixin(column nowrap, space-around, center);
     }
 }
