@@ -956,8 +956,11 @@ footer address a {
 }
 .team-about {
   padding-top: 2rem;
+  margin-left: 5%;
+  overflow: hidden;
 }
 .team-about h2 {
+  overflow: hidden;
   padding-left: 1rem;
   margin-bottom: 3rem;
   font-size: 2.6rem;
@@ -966,6 +969,40 @@ footer address a {
   font-family: 'Open Sans', sans-serif;
 }
 .team-about .team-member {
+  width: 80rem;
+  margin: 1rem auto;
+}
+@media (max-width: 1000px) {
+  .team-about .team-member {
+    width: 60rem;
+  }
+}
+@media (max-width: 767px) {
+  .team-about .team-member {
+    width: 40rem;
+  }
+}
+.team-about .team-member .accordion-closed-display {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 12px;
+}
+.team-about .team-member .accordion-closed-display h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+  padding: 1rem 1rem;
+}
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-closed-display h3 {
+    font-size: 2rem;
+  }
+}
+.team-about .team-member .accordion-open-display {
   border: 2px solid gray;
   display: flex;
   flex-flow: row nowrap;
@@ -974,14 +1011,19 @@ footer address a {
   padding: 1rem;
   border-radius: 12px;
 }
-.team-about .team-member img {
+.team-about .team-member .accordion-open-display img {
   width: 15rem;
   margin-top: 1rem;
 }
-.team-about .team-member .name-pic {
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display img {
+    width: 8rem;
+  }
+}
+.team-about .team-member .accordion-open-display .name-pic {
   width: 30rem;
 }
-.team-about .team-member .role {
+.team-about .team-member .accordion-open-display .role {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -990,10 +1032,10 @@ footer address a {
   height: 20rem;
   max-width: 50rem;
 }
-.team-about .team-member .role p {
+.team-about .team-member .accordion-open-display .role p {
   padding-bottom: 1rem;
 }
-.team-about .team-member .quote-and-social {
+.team-about .team-member .accordion-open-display .quote-and-social {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -1002,23 +1044,36 @@ footer address a {
   height: 20rem;
   padding-left: 6rem;
 }
-.team-about .team-member .quote-and-social ul {
+.team-about .team-member .accordion-open-display .quote-and-social ul {
   padding-bottom: 1rem;
 }
-.team-about .team-member p {
+.team-about .team-member .accordion-open-display p {
   font-size: 2rem;
   color: #1E3A46;
   font-family: 'Open Sans', sans-serif;
 }
-.team-about .team-member h3 {
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display p {
+    font-size: 1.6rem;
+  }
+}
+.team-about .team-member .accordion-open-display h3 {
   font-size: 2.6rem;
   font-weight: bold;
   color: #1E3A46;
   font-family: 'Open Sans', sans-serif;
 }
-.team-about .team-member .icon-image {
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display h3 {
+    font-size: 2rem;
+  }
+}
+.team-about .team-member .accordion-open-display .icon-image {
   width: 4rem;
 }
-.team-about .team-member li {
+.team-about .team-member .accordion-open-display li {
   display: inline;
+}
+.team-about .team-member .acc-hide {
+  display: none;
 }

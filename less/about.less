@@ -30,8 +30,11 @@
 .team-about
 {
     padding-top: 2rem;
+    margin-left: 5%;
+    overflow: hidden;
     h2
     {
+        overflow: hidden;
         padding-left: 1rem;
         margin-bottom: 3rem;
         font-size: 2.6rem;
@@ -41,73 +44,122 @@
     }
     .team-member
     {
-        img
+        width: 80rem;
+        @media(max-width:1000px)
         {
-            width: 15rem;
-            margin-top: 1rem;
+            width: 60rem;
         }
-        border: 2px solid gray;
-        .fbMixin(row nowrap, space-between, flex-start);
-        padding: 1rem;
-        border-radius: 12px;
-        .name-pic
+        @media(max-width:767px)
         {
-            width: 30rem;
+            width: 40rem;
         }
-        .role
+        margin: 1rem auto;
+        .accordion-closed-display
         {
-            .fbMixin(column, space-between, flex-start);
-            padding-left: 2rem;
-            height: 20rem;
+            .fbMixin;
+            border: 2px solid gray;
+            border-radius: 12px;
+            
             h3
             {
-                // padding-top: 1rem;
+                font-size: 2.6rem;
+                font-weight: bold;
+                color: @blueTextColor;
+                font-family: 'Open Sans', sans-serif;
+                padding: 1rem 1rem;
+                @media(max-width:767px)
+                {
+                    font-size: 2rem;
+                }
+            }
+        }
+        
+        .accordion-open-display
+        {
+            // width: 80rem;
+            img
+            {
+                width: 15rem;
+                margin-top: 1rem;
+                @media(max-width:767px)
+                {
+                    width: 8rem;
+                }
+            }
+            border: 2px solid gray;
+            .fbMixin(row nowrap, space-between, flex-start);
+            padding: 1rem;
+            border-radius: 12px;
+            .name-pic
+            {
+                
+                width: 30rem;
+            }
+            .role
+            {
+                
+                .fbMixin(column, space-between, flex-start);
+                padding-left: 2rem;
+                height: 20rem;
+                h3
+                {
+                    // padding-top: 1rem;
+                }
+                p
+                {
+                    padding-bottom: 1rem;
+                    // line-height: 2.4rem;
+                }
+                max-width: 50rem;
+            }
+            .quote-and-social
+            {
+                .fbMixin(column, space-between);
+                width: 20rem;
+                height: 20rem;
+                padding-left: 6rem;
+                p
+                {
+                    // padding-top: 4rem;
+                }
+                ul
+                {
+                    padding-bottom: 1rem;
+                }
             }
             p
             {
-                padding-bottom: 1rem;
-                // line-height: 2.4rem;
+                font-size: 2rem;
+                color: @blueTextColor;
+                font-family: 'Open Sans', sans-serif;
+                @media(max-width:767px)
+                {
+                    font-size: 1.6rem;
+                }
             }
-            max-width: 50rem;
-        }
-        .quote-and-social
-        {
-            .fbMixin(column, space-between);
-            width: 20rem;
-            height: 20rem;
-            padding-left: 6rem;
-            p
+            h3
             {
-                // padding-top: 4rem;
+                font-size: 2.6rem;
+                font-weight: bold;
+                color: @blueTextColor;
+                font-family: 'Open Sans', sans-serif;
+                @media(max-width:767px)
+                {
+                    font-size: 2rem;
+                }
             }
-            ul
+            .icon-image
             {
-                padding-bottom: 1rem;
+                width: 4rem;
+            }
+            li
+            {
+                display: inline;
             }
         }
-        p
+        .acc-hide
         {
-            font-size: 2rem;
-            color: @blueTextColor;
-            font-family: 'Open Sans', sans-serif;
-        }
-        h3
-        {
-            font-size: 2.6rem;
-            font-weight: bold;
-            color: @blueTextColor;
-            font-family: 'Open Sans', sans-serif;
-        }
-        .icon-image
-        {
-            width: 4rem;
-        }
-        li
-        {
-            display: inline;
+            display: none;
         }
     }
-
-
 }
-
