@@ -40,7 +40,7 @@ class AccordionLeaf
     {
         this.leaf.querySelector(".accordion-closed-display").classList.remove("acc-hide");
         this.leaf.querySelector(".accordion-open-display").classList.add("acc-hide");
-        this.leaf.style.height = "3.9rem";
+        // this.leaf.style.height = "3.9rem";
         this.leafIsOpen = false;
         
     }

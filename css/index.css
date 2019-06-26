@@ -979,7 +979,7 @@ footer address a {
 }
 @media (max-width: 767px) {
   .team-about .team-member {
-    width: 40rem;
+    width: 30rem;
   }
 }
 .team-about .team-member .accordion-closed-display {
@@ -989,6 +989,11 @@ footer address a {
   align-items: center;
   border: 2px solid gray;
   border-radius: 12px;
+}
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-closed-display {
+    height: auto;
+  }
 }
 .team-about .team-member .accordion-closed-display h3 {
   font-size: 2.6rem;
@@ -1043,6 +1048,16 @@ footer address a {
   width: 20rem;
   height: 20rem;
   padding-left: 6rem;
+}
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display .quote-and-social {
+    padding-left: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display .quote-and-social p {
+    display: none;
+  }
 }
 .team-about .team-member .accordion-open-display .quote-and-social ul {
   padding-bottom: 1rem;

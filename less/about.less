@@ -51,11 +51,15 @@
         }
         @media(max-width:767px)
         {
-            width: 40rem;
+            width: 30rem;
         }
         margin: 1rem auto;
         .accordion-closed-display
         {
+            @media(max-width:767px)
+            {
+                height: auto;
+            }
             .fbMixin;
             border: 2px solid gray;
             border-radius: 12px;
@@ -118,9 +122,16 @@
                 width: 20rem;
                 height: 20rem;
                 padding-left: 6rem;
+                @media(max-width:767px)
+                {
+                    padding-left: 2rem;
+                }
                 p
                 {
-                    // padding-top: 4rem;
+                    @media(max-width:767px)
+                    {
+                        display: none;
+                    }
                 }
                 ul
                 {
