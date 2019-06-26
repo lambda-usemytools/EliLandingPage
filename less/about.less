@@ -1,0 +1,96 @@
+.top-section-about
+{
+    width: 100%;
+    overflow: hidden;
+    img
+    {
+        width: 100%;
+    }
+}
+
+.blurb
+{
+    background-color: @lighterTan;
+    // height: 40rem;
+    margin-top: -2px;
+    padding-bottom: 2rem;
+    p
+    {
+        font-size: 2rem;
+        color: @blueTextColor;
+        font-family: 'Open Sans', sans-serif;
+        width: 90%;
+        
+        line-height: 3rem;
+        padding-top: 2rem;
+        margin-left: 5%;
+    }
+}
+
+.team-about
+{
+    padding-top: 2rem;
+    h2
+    {
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+        font-size: 2.6rem;
+        font-weight: bold;
+        color: @blueTextColor;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .team-member
+    {
+        border: 2px solid gray;
+        .fbMixin(row nowrap, space-between, flex-start);
+        padding: 1rem;
+        border-radius: 12px;
+        .role
+        {
+            h3
+            {
+                padding-top: 4rem;
+            }
+            p
+            {
+                padding-top: 6rem;
+            }
+            max-width: 50rem;
+        }
+        .quote-and-social
+        {
+            p
+            {
+                padding-top: 4rem;
+            }
+            ul
+            {
+                padding-top: 6rem;
+            }
+        }
+        p
+        {
+            font-size: 2rem;
+            color: @blueTextColor;
+            font-family: 'Open Sans', sans-serif;
+        }
+        h3
+        {
+            font-size: 2.6rem;
+            font-weight: bold;
+            color: @blueTextColor;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .icon-image
+        {
+            width: 4rem;
+        }
+        li
+        {
+            display: inline;
+        }
+    }
+
+
+}
+

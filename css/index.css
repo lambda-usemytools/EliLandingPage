@@ -361,6 +361,7 @@ footer address {
   display: block;
   text-decoration: none;
   font-size: 2rem;
+  padding-left: 0.8rem;
   color: #EDE3C2;
   font-family: 'Open Sans', sans-serif;
 }
@@ -372,28 +373,8 @@ footer address a {
     text-align: center;
     font-size: 1.6rem;
     margin-top: -1.4rem;
+    padding: 0;
   }
-}
-.top-section-about {
-  width: 100%;
-  overflow: hidden;
-}
-.top-section-about img {
-  width: 100%;
-}
-.blurb {
-  background-color: #EDE3C2;
-  height: 40rem;
-  margin-top: -2px;
-}
-.blurb p {
-  font-size: 2rem;
-  color: #1E3A46;
-  font-family: 'Open Sans', sans-serif;
-  width: 90%;
-  line-height: 3rem;
-  padding-top: 2rem;
-  margin-left: 5%;
 }
 .top-content .arrow-features-div {
   margin: 0 auto;
@@ -951,4 +932,77 @@ footer address a {
 .footer-top-spacer {
   background: white;
   height: 5.7rem;
+}
+.top-section-about {
+  width: 100%;
+  overflow: hidden;
+}
+.top-section-about img {
+  width: 100%;
+}
+.blurb {
+  background-color: #EDE3C2;
+  margin-top: -2px;
+  padding-bottom: 2rem;
+}
+.blurb p {
+  font-size: 2rem;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  line-height: 3rem;
+  padding-top: 2rem;
+  margin-left: 5%;
+}
+.team-about {
+  padding-top: 2rem;
+}
+.team-about h2 {
+  padding-left: 1rem;
+  margin-bottom: 3rem;
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+}
+.team-about .team-member {
+  border: 2px solid gray;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 12px;
+}
+.team-about .team-member .role {
+  max-width: 50rem;
+}
+.team-about .team-member .role h3 {
+  padding-top: 4rem;
+}
+.team-about .team-member .role p {
+  padding-top: 6rem;
+}
+.team-about .team-member .quote-and-social p {
+  padding-top: 4rem;
+}
+.team-about .team-member .quote-and-social ul {
+  padding-top: 6rem;
+}
+.team-about .team-member p {
+  font-size: 2rem;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+}
+.team-about .team-member h3 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+}
+.team-about .team-member .icon-image {
+  width: 4rem;
+}
+.team-about .team-member li {
+  display: inline;
 }
