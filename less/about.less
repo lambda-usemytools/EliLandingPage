@@ -44,15 +44,16 @@
     .team-member
     {
         overflow: hidden;
-        width: 80rem;
+        // width: 80rem;
+        width: 95%;
         margin: auto;
         @media(max-width:1000px)
         {
-            width: 60rem;
+            // width: 60rem;
         }
         @media(max-width:767px)
         {
-            width: 30rem;
+            // width: 30rem;
         }
         
         .accordion-closed-display
@@ -103,9 +104,10 @@
             .fbMixin(row nowrap, space-between, flex-start);
             padding: 1rem;
             border-radius: 12px;
+            
             .name-pic
             {
-                
+                .fbMixin(column nowrap, space-between, center);
                 width: 30rem;
             }
             .role
@@ -113,10 +115,14 @@
                 
                 .fbMixin(column, space-between, flex-start);
                 padding-left: 2rem;
-                height: 20rem;
+                // height: 20rem;
                 h3
                 {
-                    // padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    @media(max-width:767px)
+                    {
+                        font-size: 1.6rem;
+                    }
                 }
                 p
                 {
@@ -174,6 +180,10 @@
             li
             {
                 display: inline;
+                @media(max-width: 767px)
+                {
+                    display: block;
+                }
             }
         }
         .acc-hide

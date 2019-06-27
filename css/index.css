@@ -1037,18 +1037,12 @@ footer address a {
 }
 .team-about .team-member {
   overflow: hidden;
-  width: 80rem;
+  width: 95%;
   margin: auto;
 }
 @media (max-width: 1000px) {
-  .team-about .team-member {
-    width: 60rem;
-  }
 }
 @media (max-width: 767px) {
-  .team-about .team-member {
-    width: 30rem;
-  }
 }
 .team-about .team-member .accordion-closed-display {
   display: flex;
@@ -1100,6 +1094,10 @@ footer address a {
   }
 }
 .team-about .team-member .accordion-open-display .name-pic {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   width: 30rem;
 }
 .team-about .team-member .accordion-open-display .role {
@@ -1108,8 +1106,15 @@ footer address a {
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 2rem;
-  height: 20rem;
   max-width: 50rem;
+}
+.team-about .team-member .accordion-open-display .role h3 {
+  padding-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display .role h3 {
+    font-size: 1.6rem;
+  }
 }
 .team-about .team-member .accordion-open-display .role p {
   padding-bottom: 1rem;
@@ -1160,6 +1165,11 @@ footer address a {
 }
 .team-about .team-member .accordion-open-display li {
   display: inline;
+}
+@media (max-width: 767px) {
+  .team-about .team-member .accordion-open-display li {
+    display: block;
+  }
 }
 .team-about .team-member .acc-hide {
   display: none;
