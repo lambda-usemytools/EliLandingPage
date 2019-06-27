@@ -1106,7 +1106,7 @@ footer address a {
   justify-content: space-between;
   align-items: flex-start;
   padding-left: 2rem;
-  max-width: 50rem;
+  max-width: 45rem;
 }
 .team-about .team-member .accordion-open-display .role h3 {
   padding-bottom: 1rem;
@@ -1124,14 +1124,11 @@ footer address a {
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  width: 20rem;
+  width: 25rem;
   height: 20rem;
   padding-left: 6rem;
 }
 @media (max-width: 767px) {
-  .team-about .team-member .accordion-open-display .quote-and-social {
-    padding-left: 2rem;
-  }
 }
 .team-about .team-member .accordion-open-display .quote-and-social p {
   display: none;
