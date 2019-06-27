@@ -86,6 +86,7 @@
             border-top: 0.1rem solid black;
             opacity: 0;
             margin-bottom: 43rem;
+            overflow: hidden;
             @media (max-width: 1439px)
             {
                 width: 100rem;
@@ -113,9 +114,14 @@
             {
                 padding-bottom: 2rem;
                 .fbMixin(row nowrap, space-around, center);
+                
                 @media (max-width: 767px)
                 {
                     flex-flow: column;
+                }
+                .feature
+                {
+                    overflow: hidden;
                 }
                 .feature-name
                 {
@@ -172,6 +178,7 @@
                         font-family: 'Open Sans', sans-serif;
                         padding: 0.3rem 1.7rem 1.7rem 1.7rem;
                         line-height: 3.8rem;
+                        overflow: hidden;
                         @media (max-width: 1439px)
                         {
                             font-size: 1.6rem;
@@ -208,7 +215,8 @@
                 {
                     @media (max-width: 767px)
                     {
-                        display: none;
+                        // display: none;
+                        height: 0;
                     }
                 }
             }
@@ -372,6 +380,7 @@
     {
         margin-top: 2.35rem;
         .fbMixin(row nowrap, space-around, flex-start);
+
         img
         {
             margin-bottom: 1.75rem;
@@ -397,10 +406,16 @@
     }
     .meet-users-accordion
     {
+        @media(max-width: 1000px)
+        {
+            .fbMixin(column, center, center);
+            padding-top: 4rem;
+        }
         .met-user-accordion
         {
-            padding: 2rem 1rem;
-            .fbMixin;
+            padding: 0.2rem;
+            overflow: hidden;
+            
             img
             {
                 width: 12rem;
@@ -418,7 +433,39 @@
                     font-style: italic;
                 }
             }
+            .accordion-closed-display
+            {
+                width: 60vw;
+                background-color: @lighterTan;
+                border: 3px solid @darkerTan;
+                border-radius: 8px;
+                h3
+                {
+                    text-align: center;
+                    color: @brownTextColor;
+                    font-size: 2.8rem;
+                    line-height: 5rem;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                
+            }
+            .accordion-open-display
+            {
+                .fbMixin(column nowrap, space-between, center);
+                border: 3px solid @darkerTan;
+                border-radius: 8px;
+                &p
+                {
+                    &i
+                    {text-align: right;}
+                }
+            }
+            .acc-hide
+        {
+            display: none;
         }
+        }
+        
     }
 }
 

@@ -457,6 +457,7 @@ footer address a {
   border-top: 0.1rem solid black;
   opacity: 0;
   margin-bottom: 43rem;
+  overflow: hidden;
 }
 @media (max-width: 1439px) {
   .top-content .arrow-features-div .product-features {
@@ -493,6 +494,9 @@ footer address a {
   .top-content .arrow-features-div .product-features .three-features {
     flex-flow: column;
   }
+}
+.top-content .arrow-features-div .product-features .three-features .feature {
+  overflow: hidden;
 }
 .top-content .arrow-features-div .product-features .three-features .feature-name {
   height: 8.8rem;
@@ -551,6 +555,7 @@ footer address a {
   font-family: 'Open Sans', sans-serif;
   padding: 0.3rem 1.7rem 1.7rem 1.7rem;
   line-height: 3.8rem;
+  overflow: hidden;
 }
 @media (max-width: 1439px) {
   .top-content .arrow-features-div .product-features .three-features .feature-details p {
@@ -585,7 +590,7 @@ footer address a {
 }
 @media (max-width: 767px) {
   .top-content .arrow-features-div .product-features .three-features .acc-hide {
-    display: none;
+    height: 0;
   }
 }
 .top-content img {
@@ -760,12 +765,18 @@ footer address a {
 .meet-users-section .meet-users-div.meet-users-hidden {
   display: none;
 }
+@media (max-width: 1000px) {
+  .meet-users-section .meet-users-accordion {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+  }
+}
 .meet-users-section .meet-users-accordion .met-user-accordion {
-  padding: 2rem 1rem;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  padding: 0.2rem;
+  overflow: hidden;
 }
 .meet-users-section .meet-users-accordion .met-user-accordion img {
   width: 12rem;
@@ -780,6 +791,33 @@ footer address a {
 }
 .meet-users-section .meet-users-accordion .met-user-accordion p i {
   font-style: italic;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion .accordion-closed-display {
+  width: 60vw;
+  background-color: #EDE3C2;
+  border: 3px solid #C0B594;
+  border-radius: 8px;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion .accordion-closed-display h3 {
+  text-align: center;
+  color: #41340C;
+  font-size: 2.8rem;
+  line-height: 5rem;
+  font-family: 'Open Sans', sans-serif;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion .accordion-open-display {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid #C0B594;
+  border-radius: 8px;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion .accordion-open-displaypi {
+  text-align: right;
+}
+.meet-users-section .meet-users-accordion .met-user-accordion .acc-hide {
+  display: none;
 }
 .meet-users-hidden {
   display: none;
@@ -1126,4 +1164,25 @@ footer address a {
 }
 .team-about .team-member .acc-hide {
   display: none;
+}
+.top-section-faq {
+  width: 100%;
+  overflow: hidden;
+}
+.top-section-faq img {
+  width: 100%;
+}
+.blurb-faq {
+  background-color: #EDE3C2;
+  margin-top: -2px;
+  padding-bottom: 2rem;
+}
+.blurb-faq p {
+  font-size: 2rem;
+  color: #1E3A46;
+  font-family: 'Open Sans', sans-serif;
+  width: 90%;
+  line-height: 3rem;
+  padding-top: 2rem;
+  margin-left: 5%;
 }
