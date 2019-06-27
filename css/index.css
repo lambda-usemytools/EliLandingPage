@@ -779,15 +779,16 @@ footer address a {
   overflow: hidden;
 }
 .meet-users-section .meet-users-accordion .met-user-accordion img {
-  width: 12rem;
-  padding-right: 2rem;
+  width: 30vw;
+  padding-top: 1rem;
 }
 .meet-users-section .meet-users-accordion .met-user-accordion p {
   color: #41340C;
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
-  width: 65rem;
+  width: 80vw;
   line-height: 2.5rem;
+  padding: 1rem;
 }
 .meet-users-section .meet-users-accordion .met-user-accordion p i {
   font-style: italic;
@@ -813,7 +814,7 @@ footer address a {
   border: 3px solid #C0B594;
   border-radius: 8px;
 }
-.meet-users-section .meet-users-accordion .met-user-accordion .accordion-open-displaypi {
+.meet-users-section .meet-users-accordion .met-user-accordion .accordion-open-displayp i {
   text-align: right;
 }
 .meet-users-section .meet-users-accordion .met-user-accordion .acc-hide {
@@ -1127,10 +1128,8 @@ footer address a {
     padding-left: 2rem;
   }
 }
-@media (max-width: 767px) {
-  .team-about .team-member .accordion-open-display .quote-and-social p {
-    display: none;
-  }
+.team-about .team-member .accordion-open-display .quote-and-social p {
+  display: none;
 }
 .team-about .team-member .accordion-open-display .quote-and-social ul {
   padding-bottom: 1rem;
