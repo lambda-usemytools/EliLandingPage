@@ -1236,7 +1236,17 @@ footer address a {
   padding: 0.5rem 1rem;
   background-color: #C0B594;
 }
+@media (max-width: 350px) {
+  .faq-questions .faq-question .faq-q {
+    font-size: 1.6rem;
+  }
+}
 .faq-questions .faq-question .faq-a {
   padding: 0.5rem 1rem;
   background-color: #EDE3C2;
+}
+@media (max-width: 350px) {
+  .faq-questions .faq-question .faq-a {
+    font-size: 1.6rem;
+  }
 }
