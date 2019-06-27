@@ -1132,6 +1132,11 @@ footer address a {
     padding-left: 2rem;
   }
 }
+@media (max-width: 350px) {
+  .team-about .team-member .accordion-open-display .quote-and-social {
+    padding-left: 1rem;
+  }
+}
 .team-about .team-member .accordion-open-display .quote-and-social p {
   display: none;
 }
