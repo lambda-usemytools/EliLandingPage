@@ -12,3 +12,9 @@ The tab section on the about page is pretty full in mobile view, so if you're ad
 The reason for two accordion js files is that I wrote and styled the html first, and the accordion.js doesn't work with the faq accordion setup (which is a better setup, imo, but not sure it works well with the other pages).
 
 Header and footer should be compatible with more pages, just make sure to change h1, nav a's, and import the script for mobile nav.
+
+Mobile Preview:
+
+![image of mobile view](/assets/images/mobilePreview.png)
+
+![image of web view](/assets/images/webPreview.jpg)
