@@ -17,4 +17,6 @@ Mobile Preview:
 
 ![image of mobile view](/assets/images/mobilePreview.png)
 
+
+Web Preview:
 ![image of web view](/assets/images/webPreview.jpg)
