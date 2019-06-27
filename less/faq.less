@@ -26,3 +26,35 @@
         margin-left: 5%;
     }
 }
+
+.faq-questions
+{
+    .fbMixin(column nowrap, space-around, center);
+    .faq-question
+    {
+        overflow: hidden;
+        
+        border-radius: 8px;
+        height: 4rem;
+        font-size: 2rem;
+        color: @brownTextColor;
+        font-family: 'Open Sans', sans-serif;
+        width: 95%;
+        
+        line-height: 3rem;
+        margin-top: 2rem;
+        
+
+        .faq-q
+        {
+            padding: .5rem 1rem;
+            background-color: @darkerTan;
+        }
+        .faq-a
+        {
+            padding: .5rem 1rem;
+            background-color: @lighterTan;
+        }
+    }
+    padding-bottom: 2rem;
+}

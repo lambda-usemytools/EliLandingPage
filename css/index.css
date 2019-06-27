@@ -1185,3 +1185,29 @@ footer address a {
   padding-top: 2rem;
   margin-left: 5%;
 }
+.faq-questions {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+.faq-questions .faq-question {
+  overflow: hidden;
+  border-radius: 8px;
+  height: 4rem;
+  font-size: 2rem;
+  color: #41340C;
+  font-family: 'Open Sans', sans-serif;
+  width: 95%;
+  line-height: 3rem;
+  margin-top: 2rem;
+}
+.faq-questions .faq-question .faq-q {
+  padding: 0.5rem 1rem;
+  background-color: #C0B594;
+}
+.faq-questions .faq-question .faq-a {
+  padding: 0.5rem 1rem;
+  background-color: #EDE3C2;
+}

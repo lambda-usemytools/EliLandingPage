@@ -10,7 +10,7 @@ class Accordion
 
 class AccordionLeaf
 {
-    constructor(leaf, leaves, sepElements)
+    constructor(leaf, leaves)
     {
         this.leaf = leaf;
         this.leaves = leaves;
