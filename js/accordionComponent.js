@@ -20,7 +20,9 @@ class AccordionLeaf
         {
             if(window.innerWidth < 1000)
             {
-                if(this.leafIsOpen) { this.closeLeaf(); }
+                let icons = Array.from(this.leaf.querySelectorAll(".icon"));
+                Array.from(this.leaf.querySelectorAll(".icon-image")).forEach(iconImage =>icons.push(iconImage));
+                if(this.leafIsOpen && !icons.includes(event.target)) { this.closeLeaf(); }
                 else if(!this.leafIsOpen) { this.openLeaf(); }
             }
         })
