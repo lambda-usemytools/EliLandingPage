@@ -31,7 +31,6 @@
 {
     padding-top: 2rem;
     margin-left: 5%;
-    
     h2
     {
         overflow: hidden;
@@ -46,6 +45,7 @@
     {
         overflow: hidden;
         width: 80rem;
+        margin: auto;
         @media(max-width:1000px)
         {
             width: 60rem;
@@ -54,14 +54,14 @@
         {
             width: 30rem;
         }
-        margin: auto;
+        
         .accordion-closed-display
         {
             @media(max-width:767px)
             {
                 height: auto;
             }
-            .fbMixin;
+            .fbMixin(row, space-between);
             border: 2px solid gray;
             border-radius: 12px;
             
@@ -72,9 +72,16 @@
                 color: @blueTextColor;
                 font-family: 'Open Sans', sans-serif;
                 padding: 1rem 1rem;
+                min-height: 4rem;
+                
                 @media(max-width:767px)
                 {
-                    font-size: 2rem;
+                    font-size: 1.6rem;
+                    white-space: nowrap;
+                    &:last-child
+                    {
+                        text-align: right;
+                    }
                 }
             }
         }

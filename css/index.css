@@ -147,9 +147,6 @@ h1 {
     max-width: 769px;
   }
 }
-body {
-  cursor: pointer;
-}
 header {
   background-color: #DAAB1D;
   height: 12.8rem;
@@ -440,7 +437,7 @@ footer address a {
     border-left: 50vw solid transparent;
     border-right: 50vw solid transparent;
     border-bottom: 22.15vw solid #C0B594;
-    margin: -9rem auto;
+    margin: -9.2rem auto;
     margin-top: -22.4vw;
   }
   .top-content .arrow-features-div .arrow-up h2 {
@@ -477,9 +474,8 @@ footer address a {
 }
 @media (max-width: 767px) {
   .top-content .arrow-features-div .product-features {
-    width: 100vw;
+    width: auto;
     top: 9rem;
-    margin-bottom: 31.5rem;
     margin-bottom: 22rem;
   }
 }
@@ -569,9 +565,6 @@ footer address a {
   }
 }
 @media (max-width: 767px) {
-  .top-content .arrow-features-div .product-features .three-features .feature-details p {
-    display: none;
-  }
 }
 @media (max-width: 1439px) {
   .top-content .arrow-features-div .product-features .three-features .feature-details {
@@ -586,6 +579,12 @@ footer address a {
 }
 @media (max-width: 767px) {
   .top-content .arrow-features-div .product-features .three-features .feature-details {
+    width: 30rem;
+    height: auto;
+  }
+}
+@media (max-width: 767px) {
+  .top-content .arrow-features-div .product-features .three-features .acc-hide {
     display: none;
   }
 }
@@ -807,6 +806,11 @@ footer address a {
     padding-right: 5rem;
   }
 }
+@media (max-width: 320px) {
+  .how-it-works-section .how-it-works-top h2 {
+    padding-right: 2rem;
+  }
+}
 @media (max-width: 1000px) {
   .how-it-works-section .how-it-works-top {
     border-bottom: 2px solid black;
@@ -815,18 +819,23 @@ footer address a {
     justify-content: flex-end;
     align-items: center;
   }
-  .how-it-works-section .how-it-works-top .tabs-link {
-    font-size: 2rem;
-    width: 16rem;
-    height: 4.4rem;
-    text-align: center;
-    border-left: 1px solid black;
-    padding-top: 2rem;
-  }
 }
-@media (max-width: 1000px) and (max-width: 767px) {
+.how-it-works-section .how-it-works-top .tabs-link {
+  font-size: 2rem;
+  width: 16rem;
+  height: 4.4rem;
+  text-align: center;
+  border-left: 1px solid black;
+  padding-top: 2rem;
+}
+@media (max-width: 767px) {
   .how-it-works-section .how-it-works-top .tabs-link {
     width: 14rem;
+  }
+}
+@media (max-width: 320px) {
+  .how-it-works-section .how-it-works-top {
+    width: 32rem;
   }
 }
 .how-it-works-section .hide-tabs {
@@ -862,6 +871,11 @@ footer address a {
     display: block;
   }
 }
+@media (max-width: 320px) {
+  .how-it-works-section .how-it-works-div {
+    width: 32rem;
+  }
+}
 .how-it-works-section .how-it-works-div p {
   color: #41340C;
   font-size: 1.8rem;
@@ -892,6 +906,12 @@ footer address a {
     width: 90vw;
   }
 }
+@media (max-width: 320px) {
+  .how-it-works-section .how-it-works-div p {
+    font-size: 1.4rem;
+    width: 30rem;
+  }
+}
 @media (max-width: 1000px) {
   .how-it-works-section .how-it-works-div .tabs-item-selected {
     display: block;
@@ -917,6 +937,7 @@ footer address a {
   }
 }
 .join-today-button#bottom-join-today {
+  width: 24rem;
   margin: 4rem auto;
   position: relative;
 }
@@ -930,6 +951,11 @@ footer address a {
 @media (max-width: 767px) {
   .join-today-button#bottom-join-today {
     margin: 13rem auto 0 auto;
+  }
+}
+@media (max-width: 320px) {
+  .join-today-button#bottom-join-today {
+    margin-top: 11.8rem;
   }
 }
 .footer-top-spacer {
@@ -987,7 +1013,7 @@ footer address a {
 }
 .team-about .team-member .accordion-closed-display {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row;
   justify-content: space-between;
   align-items: center;
   border: 2px solid gray;
@@ -1004,10 +1030,15 @@ footer address a {
   color: #1E3A46;
   font-family: 'Open Sans', sans-serif;
   padding: 1rem 1rem;
+  min-height: 4rem;
 }
 @media (max-width: 767px) {
   .team-about .team-member .accordion-closed-display h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    white-space: nowrap;
+  }
+  .team-about .team-member .accordion-closed-display h3:last-child {
+    text-align: right;
   }
 }
 .team-about .team-member .accordion-open-display {

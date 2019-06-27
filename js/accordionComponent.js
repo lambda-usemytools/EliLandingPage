@@ -1,4 +1,3 @@
-// a comment
 
 class Accordion
 {
@@ -18,8 +17,11 @@ class AccordionLeaf
         this.leafIsOpen = false;
         leaf.addEventListener("click", _ =>
         {
-            if(this.leafIsOpen) { this.closeLeaf(this.leaf); }
-            else if(!this.leafIsOpen) { this.openLeaf(this.leaf); }
+            if(window.innerWidth < 1000)
+            {
+                if(this.leafIsOpen) { this.closeLeaf(this.leaf); }
+                else if(!this.leafIsOpen) { this.openLeaf(this.leaf); }
+            }
         })
     }
     openLeaf()
@@ -56,8 +58,29 @@ class AccordionLeaf
 let leaves = Array.from(document.querySelectorAll(".team-member"));
 
 let teamAccordion;
-if(leaves) teamAccordion = new Accordion(leaves);
-teamAccordion.accLeaves.forEach(accLeaf => 
-{   if(accLeaf.leafIsOpen) accLeaf.closeLeaf();
-});
+let accSizeFunc;
+if(leaves) 
+{
+    teamAccordion = new Accordion(leaves);
+    teamAccordion.accLeaves.forEach(accLeaf => 
+    {   
+        if(accLeaf.leafIsOpen) accLeaf.closeLeaf();
+    });
+    accSizeFunc = _ => teamAccordion.accLeaves.forEach(leaf => leaf.leafIsOpen = true);
+}
 
+
+
+let featureDetails = Array.from(document.querySelectorAll(".feature-details"));
+
+let featureAccordion;
+
+if(featureDetails) 
+{
+    featureAccordion = new Accordion(featureDetails);
+    featureAccordion.accLeaves.forEach(accLeaf => 
+    {   
+        if(accLeaf.leafIsOpen) accLeaf.closeLeaf();
+    });
+    accSizeFunc = _ => featureDetails.accLeaves.forEach(leaf => leaf.leafIsOpen = true);
+}
