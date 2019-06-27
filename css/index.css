@@ -960,7 +960,6 @@ footer address a {
 .team-about {
   padding-top: 2rem;
   margin-left: 5%;
-  overflow: hidden;
 }
 .team-about h2 {
   overflow: hidden;
@@ -972,8 +971,9 @@ footer address a {
   font-family: 'Open Sans', sans-serif;
 }
 .team-about .team-member {
+  overflow: hidden;
   width: 80rem;
-  margin: 1rem auto;
+  margin: auto;
 }
 @media (max-width: 1000px) {
   .team-about .team-member {
@@ -1011,6 +1011,7 @@ footer address a {
   }
 }
 .team-about .team-member .accordion-open-display {
+  overflow: hidden;
   border: 2px solid gray;
   display: flex;
   flex-flow: row nowrap;

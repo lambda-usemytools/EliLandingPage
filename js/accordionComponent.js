@@ -24,30 +24,31 @@ class AccordionLeaf
     }
     openLeaf()
     {
-        this.leaves.accLeaves.forEach(leaf => leaf.closeLeaf());
-        this.leafIsOpen = true;
-        this.leaf.style.height = "auto";
-        this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
-        this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide")
-
-        function swapOpen(elem)
+        this.leaves.accLeaves.forEach(leaf => 
         {
-            this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
-            this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide");
-        }
-        // TweenMax.set(this.leaf, {height: 30});
-        TweenMax.fromTo(this.leaf, .7, {opacity: 0, }, {opacity: 1, height:"auto", });
-        // let tlOpen = new TimelineMax();
-        // tlOpen.to(this.leaf, .7, )
-
-
+            if(leaf.leafIsOpen) leaf.closeLeaf();
+        });
+        this.leafIsOpen = true;
+        //anim
+        let curHeight = this.leaf.offsetHeight;
+        this.leaf.querySelector(".accordion-closed-display").classList.add("acc-hide");
+        this.leaf.querySelector(".accordion-open-display").classList.remove("acc-hide");
+        TweenMax.set(this.leaf, {height:"auto"});
+        TweenMax.from(this.leaf, .5, {height: curHeight});
     }
     closeLeaf(leaf)
     {
+        this.leafIsOpen = false;
+        
+        //anim
+        let curHeight = this.leaf.offsetHeight;
+        
+        
         this.leaf.querySelector(".accordion-closed-display").classList.remove("acc-hide");
         this.leaf.querySelector(".accordion-open-display").classList.add("acc-hide");
-        // this.leaf.style.height = "3.9rem";
-        this.leafIsOpen = false;
+        
+        TweenMax.set(this.leaf, {height:"auto"});
+        TweenMax.from(this.leaf, .5, {height: curHeight});
         
     }
 }
