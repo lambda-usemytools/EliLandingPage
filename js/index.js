@@ -101,8 +101,8 @@ window.addEventListener("resize", _ =>
 {
 // if(!lock) 
 // {
-    // lock = true;
+//     lock = true;
     sizeCheckAccordion();
-    setTimeout( _ => lock = false, 200);
+    // setTimeout( _ => lock = false, 200);
 // }
 });

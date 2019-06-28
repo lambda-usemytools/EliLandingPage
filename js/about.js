@@ -5,6 +5,16 @@ let teamSmall = document.querySelectorAll(".accordion-closed-display");
 
 function sizeCheckAccordion()
 {
+
+    if(leaves) 
+    {
+        
+        teamAccordion.accLeaves.forEach(accLeaf => 
+        {   
+            if(accLeaf.leafIsOpen) accLeaf.closeLeaf();
+        });
+    }
+
     if(window.innerWidth < 1000)
     {
         teamBig.forEach(member => member.classList.add("acc-hide"));
@@ -24,14 +34,14 @@ window.addEventListener("load", _ =>
 });
 
 
-let lock = false;
+// let lock = false;
 
 window.addEventListener("resize", _ =>
 {
-if(!lock) 
-{
-    lock = true;
+// if(!lock) 
+// {
+    // lock = true;
     sizeCheckAccordion();
-    setTimeout( _ => lock = false, 200);
-}
+    // setTimeout( _ => lock = false, 200);
+// }
 });
