@@ -65,7 +65,8 @@ joinBtns.forEach(btn => btn.addEventListener("mouseleave", _ =>
 let mUserFlex = document.querySelector(".meet-users-div");
 let mUserAccordion = document.querySelector(".meet-users-accordion");
 let howItWorksTabs = document.querySelector(".how-it-works-top").querySelectorAll(".tabs-link");
-
+let arrow = document.querySelector(".arrow-up");
+let topImg = document.querySelector("#jumbo-toolbench");
 
 function sizeCheckAccordion()
 {
@@ -75,6 +76,11 @@ function sizeCheckAccordion()
         mUserAccordion.classList.remove("meet-users-hidden");
         howItWorksTabs.forEach(tab => tab.classList.remove("hide-tabs"));
     }
+    
+        arrow.style.borderLeftWidth = topImg.offsetWidth/2 + "px";
+        console.log(arrow.style.borderLeftWidth);
+        arrow.style.borderRightWidth = topImg.offsetWidth/2 + "px";
+    
     if(window.innerWidth >= 1000)
     {
         mUserFlex.classList.remove("meet-users-hidden");
@@ -89,14 +95,14 @@ window.addEventListener("load", _ =>
 });
 
 
-let lock = false;
+// let lock = false;
 
 window.addEventListener("resize", _ =>
 {
-if(!lock) 
-{
-    lock = true;
+// if(!lock) 
+// {
+    // lock = true;
     sizeCheckAccordion();
     setTimeout( _ => lock = false, 200);
-}
+// }
 });
