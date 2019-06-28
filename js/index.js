@@ -66,7 +66,7 @@ let mUserFlex = document.querySelector(".meet-users-div");
 let mUserAccordion = document.querySelector(".meet-users-accordion");
 let howItWorksTabs = document.querySelector(".how-it-works-top").querySelectorAll(".tabs-link");
 let arrow = document.querySelector(".arrow-up");
-let topImg = document.querySelector("#jumbo-toolbench");
+let prodFeatures = document.querySelector(".product-features");
 
 function sizeCheckAccordion()
 {
@@ -77,9 +77,9 @@ function sizeCheckAccordion()
         howItWorksTabs.forEach(tab => tab.classList.remove("hide-tabs"));
     }
     
-        arrow.style.borderLeftWidth = topImg.offsetWidth/2 + "px";
-        console.log(arrow.style.borderLeftWidth);
-        arrow.style.borderRightWidth = topImg.offsetWidth/2 + "px";
+        arrow.style.borderLeftWidth = prodFeatures.offsetWidth/2 + "px";
+        
+        arrow.style.borderRightWidth = prodFeatures.offsetWidth/2 + "px";
     
     if(window.innerWidth >= 1000)
     {
